@@ -125,3 +125,67 @@ button:focus {
 	}
 
 }
+
+// links
+.link a {
+	display: block;
+	width: fit-content;
+	font-size: 13px;
+	line-height: 19px;
+	font-weight: 600;
+	color: @blue;
+	position: relative;
+	.tr;
+
+	span {
+
+		background: linear-gradient(to right, @linkBorder, @linkBorder);
+		background-position: 0 100%;
+		background-repeat: repeat-x;
+		background-size: 5px 1px;
+
+	}
+
+	&:hover {
+		opacity: .5;
+	}
+
+
+
+
+}
+
+.link.link--icon a {
+	span:first-child {
+
+		background: none;
+	}
+
+	span+span {
+		margin-left: 15px;
+	}
+}
+
+//text
+p {
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: -0.25px;
+	color: #000;
+}
+
+.text-20 p {
+	font-size: 20px;
+	line-height: 1.4;
+	font-weight: 400;
+	color: @yellow;
+
+	@media(max-width:767px) {
+		font-size: 18px;
+	}
+
+}
+
+.text-color {
+	color: @yellow;
+}
