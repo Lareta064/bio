@@ -1,5 +1,36 @@
 section(style="margin-bottom: 50px")
 	.container
+		p.title-1 Заголовки
+		box(style="margin-top: 30px")
+			h1.title-1 Заголовок-1
+			pre h1.title-1 Заголовок-1
+		box(style="margin-top: 30px")
+			h1.title-2 Заголовок-2
+			pre h2.title-2 Заголовок-2
+		box(style="margin-top: 30px")
+			h1.title-3 Заголовок-3
+			pre h3.title-3 Заголовок-3
+		p.title-1 Цвета
+		.flex-wrapper
+			.box
+				.box(style="background-color:#1E2144; width:40px; height:40px ")
+				p @basic;
+			.box
+				.box(style="background-color:#8A2132; width:40px; height:40px ")
+				p @brown;
+			.box
+				.box(style="background-color:#343cd2;; width:40px; height:40px ")
+				p @blue;
+			.box
+				.box(style="background-color:rgba(52, 60, 210, .5); width:40px; height:40px ")
+				p @blueOp;
+			.box
+				.box(style="background-color:#F5F5F6; width:40px; height:40px ")
+				p @greyBg;
+			.box
+				.box(style="background-color:#C58703; width:40px; height:40px ")
+				p @yellow;
+
 		p(style="margin-top: 30px") +logo
 		+logo
 		p(style="margin-top: 30px") +search

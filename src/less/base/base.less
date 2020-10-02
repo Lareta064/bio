@@ -82,3 +82,46 @@ button:focus {
 	}
 
 }
+
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+// titles
+.title-1 {
+	font-size: 36px;
+	line-height: 1.222;
+	color: #000;
+	font-weight: 500;
+
+	@media(max-width:767px) {
+		font-size: 24px;
+		line-height: 29px;
+	}
+}
+
+.title-2 {
+	font-size: 26px;
+	line-height: 32px;
+	color: @basic;
+	font-weight: 600;
+}
+
+.title-3 {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 500;
+	color: #000;
+}
+
+@media(max-width:767px) {
+
+	.title-1,
+	.title-2 {
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+}
