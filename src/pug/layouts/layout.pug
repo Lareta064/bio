@@ -1,3 +1,6 @@
+include mixins-svg.pug
+include mixins-Vika.pug
+include mixins-Lara.pug
 block variables
 
 
@@ -10,9 +13,15 @@ html(lang='ru')
 		meta(name="keywords" content="" )
 		meta(name="description" content="" )
 		link( rel="stylesheet" href="libs/bootstrap/bootstrap.min.css")
+		// carousel
+		link( rel="stylesheet" href="libs/owlCarousel/owl.carousel.min.css")
+		// fontAwesome
 		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+		// fonts
 		link(link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet")
+		// favicon
 		link(rel="shortcut icon" href="img/favicon.png"  type="image/x-icon" )
+		// main style
 		link(rel="stylesheet", href="css/main.css")
 
 	body
@@ -22,4 +31,9 @@ html(lang='ru')
 
 		script(src="libs/jquery/jquery-3.0.0.min.js")
 		script(src="libs/bootstrap/bootstrap.min.js")
+		// carousel
+		script(src="libs/owlCarousel/owl.carousel.min.js")
+		//phone mask
+		script(src="libs/jquery.maskedinput.min.js")
+		// main js
 		script(src='js/main.js')
