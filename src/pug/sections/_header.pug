@@ -1,0 +1,42 @@
+header.header
+	.container
+		.header-content
+			.logo-block(itemscope itemtype="https://schema.org")
+				a(href="#!" itemprop="logo")
+					//========== svg  логоип ==========
+					+logo
+					//========== конец svg  логоип ==========
+			.header-column(itemscope itemtype="https://schema.org/Organization")
+				h2 ПЦР в реальном времени
+				.contact-phone
+					span
+						//========== svg телефон ==========
+						+call
+						//========== конец svg телефон ==========
+					a(href="tel:84954342266" itemprop="telephone") +7 (495) 434-22-66
+				button.callback-btn Обратная связь
+				button.square Eng
+				form#search-form.search-form
+					.search-input
+						input(type="text" placeholder="Поиск...")
+					.search-result#search-result
+						.search-result__count.text-13
+							.container
+								p Найдено 1-2 из 2
+							
+						.search-result__list
+							.container
+								ul
+									li.link
+										a(href="#!")
+											span Индикатор-БИО
+									li.link
+										a(href="#!")
+											span Комплектация мобильной ПЦР-лаборатории «Индикатор-БИО»
+					button.square#search-button
+						//========== svg лупа ==========
+						+search(class="visible")
+						//========== конец svg лупа ==========
+						//========== svg крестик ==========
+						+close
+						//========== конец svg крестик ==========
