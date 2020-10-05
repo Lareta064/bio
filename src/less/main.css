@@ -1,38 +1,27 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 html,
 body {
-
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	color: #000;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 14px;
-	line-height: 1.57;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
 }
-
-.noscroll {
-	overflow: hidden;
-}
-
 a,
 a:hover {
   text-decoration: none;
 }
-
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-
 h1,
 h2,
 h3,
@@ -42,78 +31,66 @@ p {
   padding: 0;
   margin: 0;
 }
-
 img {
   max-width: 100%;
   vertical-align: middle;
   height: auto;
 }
-
 svg {
   max-width: 100%;
 }
-
 input {
   outline: none;
 }
-
 button,
 input {
   outline: none;
   font-family: inherit;
 }
-
 button {
   cursor: pointer;
   padding: 0;
   background-color: transparent;
   border: 0px;
 }
-
 button:active,
 button:focus {
   outline: none !important;
 }
-
-.container {
-  @media (min-width: 1364px) {
+@media (min-width: 1364px) {
+  .container {
     max-width: 1260px;
     padding: 0;
   }
 }
-
 .flex-wrapper {
   display: flex;
   justify-content: space-between;
 }
-
-// titles
 .title-1 {
   font-size: 36px;
   line-height: 1.222;
   color: #000;
   font-weight: 500;
-
-  @media (max-width: 767px) {
+}
+@media (max-width: 767px) {
+  .title-1 {
     font-size: 24px;
     line-height: 29px;
   }
 }
-
 .title-2 {
   font-size: 26px;
   line-height: 32px;
-  color: @basic;
+  color: #1E2144;
   font-weight: 600;
 }
-
 .title-3 {
   font-size: 24px;
   line-height: 29px;
   font-weight: 500;
   color: #000;
 }
-
 @media (max-width: 767px) {
   .title-1,
   .title-2 {
@@ -121,69 +98,51 @@ button:focus {
     line-height: 29px;
   }
 }
-
-// links
 .link a {
   display: block;
   width: fit-content;
   font-size: 13px;
   line-height: 19px;
   font-weight: 600;
-  color: @blue;
+  color: #343cd2;
   position: relative;
-  .tr;
-
-  span {
-    background: linear-gradient(to right, @linkBorder, @linkBorder);
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 5px 1px;
-  }
-
-  &:hover {
-    opacity: 0.5;
-  }
+  transition: 0.5s;
 }
-
-.link.link--icon a {
-  span:first-child {
-    background: none;
-  }
-
-  span + span {
-    margin-left: 15px;
-  }
+.link a span {
+  background: linear-gradient(to right, rgba(197, 135, 3, 0.5), rgba(197, 135, 3, 0.5));
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 5px 1px;
 }
-
-//text
+.link a:hover {
+  opacity: 0.5;
+}
+.link.link--icon a span:first-child {
+  background: none;
+}
+.link.link--icon a span + span {
+  margin-left: 15px;
+}
 p {
   font-size: 14px;
   line-height: 22px;
   letter-spacing: -0.25px;
   color: #000;
 }
-
 .text-20 p {
   font-size: 20px;
   line-height: 1.4;
   font-weight: 400;
-  color: @yellow;
-
-  @media (max-width: 767px) {
+  color: #C58703;
+}
+@media (max-width: 767px) {
+  .text-20 p {
     font-size: 18px;
   }
 }
-
-.text-16 p{
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.37;
-}
-
 .text-color {
-  color: @yellow;
+  color: #C58703;
 }
-
 .button {
   height: 50px;
   font-weight: 600;
@@ -199,49 +158,37 @@ p {
   padding-left: 25px;
   padding-right: 25px;
 }
-
 .button.button-brown {
-  background-color: @brown;
+  background-color: #8A2132;
   color: #fff;
-  &:hover {
-    background-color: #b92c43;
-    color: #fff;
-  }
-
-  &:active {
-    background-color: #731423;
-  }
 }
-
+.button.button-brown:hover {
+  background-color: #b92c43;
+  color: #fff;
+}
+.button.button-brown:active {
+  background-color: #731423;
+}
 .button.button-white {
   background-color: #fff;
-  color: @blue;
-
-  &:hover {
-    color: #246fff;
-  }
-
-  &:active {
-    background-color: #fff;
-  }
+  color: #343cd2;
 }
-
-
-.text-13 {
-	font-size: 13px;
-	line-height: 16px;
+.button.button-white:hover {
+  color: #246fff;
 }
-
-.text-color {
-	color: @yellow;
+.button.button-white:active {
+  background-color: #fff;
 }
-
 .button.button-blue {
-  background-color: @blue;
+  background-color: #343cd2;
   color: #fff;
-
-  &:hover {
-    background-color: #246fff;
-  }
 }
-
+.button.button-blue:hover {
+  background-color: #246fff;
+}
+.bsh {
+  box-shadow: 0px 5px 35px rgba(65, 75, 178, 0.15);
+}
+.tr {
+  transition: 0.5s;
+}
