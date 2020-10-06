@@ -6,16 +6,18 @@ header.header
 					//========== svg  логоип ==========
 					+logo
 					//========== конец svg  логоип ==========
+				p ПЦР в реальном времени
 			.header-column(itemscope itemtype="https://schema.org/Organization")
-				h2 ПЦР в реальном времени
-				.contact-phone
+				.d-none.d-md-block.d-lg-none.d-xl-block.logo-title
+					h2 ПЦР в реальном времени
+				.contact-phone.d-none.d-lg-flex
 					span
 						//========== svg телефон ==========
 						+call
 						//========== конец svg телефон ==========
 					a(href="tel:84954342266" itemprop="telephone") +7 (495) 434-22-66
-				button.callback-btn Обратная связь
-				button.square Eng
+				button.callback-btn.d-none.d-lg-block Обратная связь
+				button.square.square-lang.d-none.d-lg-block Eng				
 				form#search-form.search-form
 					.search-input
 						input(type="text" placeholder="Поиск...")
@@ -40,3 +42,16 @@ header.header
 						//========== svg крестик ==========
 						+close
 						//========== конец svg крестик ==========
+				.menu-toggle
+					span
+.header-menu
+	.container
+		.header-menu__content
+			ul
+				li Продукция
+				li Принцип работы
+				li О компании
+				li Вопрос-ответ
+				li Документация
+				li Контакты
+					
