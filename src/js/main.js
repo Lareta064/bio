@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
 	// слайдер карточек
-    const benefitsSlider = $('.benefiits-block')
+	const benefitsSlider = $('.benefiits-block')
 	benefitsSlider.owlCarousel({
 		items: 1,
 		loop: true,
@@ -35,7 +35,7 @@ $(document).ready(function() {
 		}
 	});
 
-$(document).ready(function () {
+
 
 	// показать строку поиска в шапке
 	const bodyEl = document.body;
