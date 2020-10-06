@@ -26,6 +26,7 @@ $(document).ready(function () {
 
 
 	});
+	// destroy слайдера на десктопах
 	if ($(window).width() > 1200) {
 		benefitsSlider.trigger('destroy.owl.carousel');
 	}
@@ -35,6 +36,20 @@ $(document).ready(function () {
 		}
 	});
 
+	// HEADER SLIDER
+	let mainSlider = $('.header-slider__wrapper');
+	mainSlider.owlCarousel({
+		items: 1,
+		loop: true,
+		// margin: 30,
+		navSpeed: 1000,
+		smartSpeed: 1000,
+		mouseDrag: false,
+
+		animateOut: 'fadeOut',
+		animateIn: 'fadeIn',
+
+	});
 	// Открытие моб меню по клику на гамбургер
 	const menuToggle = document.querySelector('.menu-toggle');
 	const mobMenu = document.querySelector('#mobile-menu');
