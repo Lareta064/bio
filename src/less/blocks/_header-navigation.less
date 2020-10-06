@@ -76,6 +76,11 @@
 
 			}
 		}
+
+		@media(max-width:1199px) {
+			left: -20px;
+			padding-left: 20px;
+		}
 	}
 
 	ul>li>ul>li:first-child:after {
@@ -94,6 +99,7 @@
 
 // mob menu
 .mobile-menu {
+
 	position: fixed;
 	top: 61px;
 	left: 0;
@@ -124,14 +130,10 @@
 		}
 	}
 
+	@media(min-width:768px) {
+		display: none;
+	}
 }
-
-// .mobile-menu ul>li>ul {
-// 	position: relative;
-// 	top: 0;
-// 	left: 0;
-// 	height: auto;
-// }
 
 .mobile-menu.active {
 	transform: translateX(0);
