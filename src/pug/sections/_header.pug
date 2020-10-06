@@ -1,6 +1,7 @@
 #overlay
+// ========== Шапка ==========
 header.header
-	.container
+	.container.container--large
 		.header-content
 			.logo-block(itemscope itemtype="https://schema.org")
 				a(href="#!" itemprop="logo")
@@ -9,16 +10,16 @@ header.header
 					//========== конец svg  логоип ==========
 				p ПЦР в реальном времени
 			.header-column(itemscope itemtype="https://schema.org/Organization")
-				.d-none.d-md-block.d-lg-none.d-xl-block.logo-title
+				.d-none.d-xl-block.logo-title
 					h2 ПЦР в реальном времени
-				.contact-phone.d-none.d-lg-flex
+				.contact-phone.d-none.d-md-flex
 					span
 						//========== svg телефон ==========
 						+call
 						//========== конец svg телефон ==========
 					a(href="tel:84954342266" itemprop="telephone") +7 (495) 434-22-66
-				button.callback-btn.d-none.d-lg-block Обратная связь
-				button.square.square-lang.d-none.d-lg-block Eng				
+				button.callback-btn.d-none.d-md-block Обратная связь
+				button.square.square-lang.d-none.d-md-block Eng				
 				form#search-form.search-form
 					.search-input
 						input(type="text" placeholder="Поиск...")
@@ -45,6 +46,7 @@ header.header
 						//========== конец svg крестик ==========
 				.menu-toggle
 					span
+// ========== десктопное меню в шапке ==========
 .header-menu
 	.container
 		.header-menu__content
@@ -68,6 +70,7 @@ header.header
 					a(href="#!") Документация
 				li 
 					a(href="#!") Контакты
+// ========== мобильное меню ==========
 #mobile-menu.mobile-menu
 	.mobile-menu__header
 		.contact-phone
@@ -76,6 +79,29 @@ header.header
 				+call
 				//========== конец svg телефон ==========
 			a(href="tel:84954342266" itemprop="telephone") +7 (495) 434-22-66
-		button.square.square-lang Eng	
-
-					
+		button.square.square-lang Eng
+	.mobile-menu__body
+		ul
+			li 
+				a(href="#!") Главная
+			li 
+				a(href="#!") Продукция
+				ul
+					li
+						a(href="#!") Индикатор-БИО
+					li
+						a(href="#!") Расходные материалы (ПЦР-чип)
+					li
+						a(href="#!") Комплектация мобильной#[br] ПЦР-лаборатории#[br]“Индикатор-БИО”
+			li 
+				a(href="#!") Принцип работы
+			li 
+				a(href="#!") О компании
+			li 
+				a(href="#!") Вопрос-ответ
+			li 
+				a(href="#!") Документация
+			li 
+				a(href="#!") Контакты
+		.mobile-menu__footer
+			button.button.button-blue Обратная связь 
