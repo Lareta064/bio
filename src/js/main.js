@@ -1,21 +1,18 @@
-$(document).ready(function() {
+$(document).ready(function () {
 	// слайдер карточек
-    const benefitsSlider = $('.benefiits-block')
+	const benefitsSlider = $('.benefiits-block')
 	benefitsSlider.owlCarousel({
 		items: 1,
 		loop: true,
-		autoplay: true,
+		// autoplay: true,
 		autoplaySpeed: 1000,
 		responsive: {
 			0: {
 				items: 1,
 			},
-			460: {
-				items: 2,
 
-			},
 			768: {
-				items: 3,
+				stagePadding: 20,
 
 			},
 			992: {
@@ -23,7 +20,6 @@ $(document).ready(function() {
 
 			}
 		}
-
 
 	});
 	if ($(window).width() > 1200) {
@@ -34,8 +30,6 @@ $(document).ready(function() {
 			benefitsSlider.trigger('destroy.owl.carousel');
 		}
 	});
-
-$(document).ready(function () {
 
 	// показать строку поиска в шапке
 	const bodyEl = document.body;
