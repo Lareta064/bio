@@ -9,17 +9,17 @@ html {
 html,
 body {
 
-	margin: 0;
-	padding: 0;
-	background: #F5F5F6;
-	color: #000;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 14px;
-	line-height: 1.57;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+  font-family: @m400;
+  font-size: 14px;
+  line-height: 1.57;
 }
 
 .noscroll {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 a,
@@ -92,7 +92,7 @@ button:focus {
   font-size: 36px;
   line-height: 1.222;
   color: #000;
-  font-weight: 500;
+  font-family: @m500;
 
   @media (max-width: 767px) {
     font-size: 24px;
@@ -104,17 +104,17 @@ button:focus {
   font-size: 26px;
   line-height: 32px;
   color: @basic;
-  font-weight: 600;
+  font-family: @m600;
 }
 
 .title-3 {
   font-size: 24px;
   line-height: 29px;
-  font-weight: 500;
+  font-family: @m500;
   color: #000;
 }
 
-.title-3-600{
+.title-3-600 {
   font-size: 24px;
   font-weight: 600;
   color: #000;
@@ -122,6 +122,7 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+
   .title-1,
   .title-2 {
     font-size: 24px;
@@ -135,7 +136,7 @@ button:focus {
   width: fit-content;
   font-size: 13px;
   line-height: 19px;
-  font-weight: 600;
+  font-family: @m600;
   color: @blue;
   position: relative;
   .tr;
@@ -157,7 +158,7 @@ button:focus {
     background: none;
   }
 
-  span + span {
+  span+span {
     margin-left: 15px;
   }
 }
@@ -173,7 +174,7 @@ p {
 .text-20 p {
   font-size: 20px;
   line-height: 1.4;
-  font-weight: 400;
+  font-family: @m400;
   color: @yellow;
 
   @media (max-width: 767px) {
@@ -181,9 +182,9 @@ p {
   }
 }
 
-.text-16 p{
+.text-16 p {
   font-size: 16px;
-  font-weight: 500;
+  font-family: @m500;
   line-height: 1.37;
 }
 
@@ -193,7 +194,7 @@ p {
 
 .button {
   height: 50px;
-  font-weight: 600;
+  font-family: @m600;
   line-height: 50px;
   display: inline-block;
   border-radius: 8px;
@@ -210,6 +211,7 @@ p {
 .button.button-brown {
   background-color: @brown;
   color: #fff;
+
   &:hover {
     background-color: #b92c43;
     color: #fff;
@@ -235,12 +237,12 @@ p {
 
 
 .text-13 {
-	font-size: 13px;
-	line-height: 16px;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 .text-color {
-	color: @yellow;
+  color: @yellow;
 }
 
 .button.button-blue {
@@ -251,4 +253,3 @@ p {
     background-color: #246fff;
   }
 }
-
