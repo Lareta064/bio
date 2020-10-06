@@ -8,6 +8,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: #F5F5F6;
   color: #000;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -106,7 +107,7 @@ button:focus {
   font-weight: 600;
   color: #343cd2;
   position: relative;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .link a span {
   background: linear-gradient(to right, rgba(197, 135, 3, 0.5), rgba(197, 135, 3, 0.5));
@@ -139,6 +140,11 @@ p {
   .text-20 p {
     font-size: 18px;
   }
+}
+.text-16 p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.37;
 }
 .text-color {
   color: #C58703;
@@ -190,5 +196,47 @@ p {
   box-shadow: 0px 5px 35px rgba(65, 75, 178, 0.15);
 }
 .tr {
-  transition: 0.5s;
+  transition: 0.3s;
+}
+.product-card {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 400px;
+  height: 445px;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.product-card .card-title {
+  display: flex;
+  height: 66px;
+  max-width: 229px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product-card:hover {
+  box-shadow: 0px 5px 35px rgba(65, 75, 178, 0.15);
+}
+@media (max-width: 1023px) {
+  .product-card {
+    height: 355px;
+  }
+}
+@media (max-width: 991px) {
+  .product-card {
+    height: 275px;
+  }
+}
+@media (max-width: 767px) {
+  .product-card {
+    height: 381px;
+    max-width: 335px;
+    margin-bottom: 20px;
+  }
 }
