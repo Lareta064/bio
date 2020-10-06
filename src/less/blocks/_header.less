@@ -279,11 +279,14 @@
 	z-index: 10;
 	opacity: 0;
 	z-index: -1;
-	.tr;
+	transform: translateY(100%);
+	// display: none;
+	transition: .3s;
 
 	&.visible {
 		opacity: 1;
 		z-index: 2;
+		transform: translateY(0%);
 	}
 }
 
@@ -300,7 +303,7 @@
 	display: none;
 	position: relative;
 
-	@media(max-width:1199px) {
+	@media(max-width:767px) {
 		display: block;
 		z-index: 20;
 		// margin-left: 40px;
@@ -316,7 +319,7 @@
 
 	@media(max-width:991px) {
 
-		margin-left: 30px;
+		// margin-left: 30px;
 	}
 
 	span {

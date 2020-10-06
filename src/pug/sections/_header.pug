@@ -1,3 +1,4 @@
+#overlay
 header.header
 	.container
 		.header-content
@@ -48,10 +49,33 @@ header.header
 	.container
 		.header-menu__content
 			ul
-				li Продукция
-				li Принцип работы
-				li О компании
-				li Вопрос-ответ
-				li Документация
-				li Контакты
+				li 
+					a(href="#!") Продукция
+					ul
+						li
+							a(href="#!") Индикатор-БИО
+						li
+							a(href="#!") Расходные материалы (ПЦР-чип)
+						li
+							a(href="#!") Комплектация мобильной ПЦР-лаборатории “Индикатор-БИО”
+				li 
+					a(href="#!") Принцип работы
+				li 
+					a(href="#!") О компании
+				li 
+					a(href="#!") Вопрос-ответ
+				li 
+					a(href="#!") Документация
+				li 
+					a(href="#!") Контакты
+#mobile-menu.mobile-menu
+	.mobile-menu__header
+		.contact-phone
+			span
+				//========== svg телефон ==========
+				+call
+				//========== конец svg телефон ==========
+			a(href="tel:84954342266" itemprop="telephone") +7 (495) 434-22-66
+		button.square.square-lang Eng	
+
 					

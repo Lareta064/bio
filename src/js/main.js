@@ -39,6 +39,7 @@ $(document).ready(function () {
 
 	// показать строку поиска в шапке
 	const bodyEl = document.body;
+	const overlayBlock = document.querySelector('#overlay');
 	const btnShowSearchInput = document.querySelector('#search-button');
 	const logoBlock = document.querySelector('.logo-block');
 	const headerSearchForm = document.querySelector('#search-form');
@@ -66,17 +67,19 @@ $(document).ready(function () {
 	});
 	// Открытие моб меню по клику на гамбургер
 	const menuToggle = document.querySelector('.menu-toggle');
+	const mobMenu = document.querySelector('#mobile-menu');
+
 	menuToggle.addEventListener('click', function () {
 		if (this.classList.contains('active')) {
 			this.classList.remove('active');
-			// mobMenu.classList.remove('active');
-			// overlayBlock.classList.remove('active');
+			mobMenu.classList.remove('active');
+			overlayBlock.classList.remove('active');
 			bodyEl.classList.remove('noscroll');
 
 		} else {
 			this.classList.add('active');
-			// mobMenu.classList.add('active');
-			// overlayBlock.classList.add('active');
+			mobMenu.classList.add('active');
+			overlayBlock.classList.add('active');
 			bodyEl.classList.add('noscroll');
 
 		}
