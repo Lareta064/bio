@@ -4,7 +4,7 @@ $(document).ready(function () {
 	benefitsSlider.owlCarousel({
 		items: 1,
 		loop: true,
-		// autoplay: true,
+		autoplay: true,
 		autoplaySpeed: 1000,
 		responsive: {
 			0: {
@@ -22,6 +22,7 @@ $(document).ready(function () {
 		}
 
 	});
+	
 	if ($(window).width() > 1200) {
 		benefitsSlider.trigger('destroy.owl.carousel');
 	}
