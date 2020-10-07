@@ -1,0 +1,33 @@
+
+#contactForm.modal.fade(tabindex="-1" role="dialog"  aria-hidden="true")
+	.modal-dialog.modal-dialog-centered(role="document")
+		.modal-content
+			.modal-form-title
+				button.close(type="button" data-dismiss="modal" aria-label="Close")
+					span(aria-hidden="true")
+						i.fas.fa-times
+			.modal-body
+				.feedback-form
+					form.contact-form
+						.title-3
+							h3 Форма обратной связи
+						.form-group
+							label(for="userName") Ф.И.О 
+								span * 
+							input(type="text" name="userName" )
+						.form-group
+							label(for="userName") Организация 
+								span * 
+							input(type="text" name="userName" )
+						
+						
+						.form-group
+							textarea(type="text" name="message"  )
+							span.fake-placeholder Комментарий к заказу
+						.form-group.agree-text
+							label(class="form-label")
+								input(class="form-checkbox" type="checkbox" name="agreePolitic")
+								span.custom-checkbox
+								| Принимаю  #[a(href="#") условия обработки] моих данных.
+						.form-group
+							input.page-btn2(type="submit" value="Отправить")

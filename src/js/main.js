@@ -59,16 +59,7 @@ $(document).ready(function () {
 		loop: true,
 		autoplay: true,
 		autoplaySpeed: 1000,
-		// responsive: {
-		// 	0: {
-		// 		items: 1,
-		// 	},
 
-		// 	768: {
-		// 		stagePadding: 40,
-
-		// 	}
-		// }
 	});
 	// destroy слайдера на десктопах
 
@@ -92,7 +83,14 @@ $(document).ready(function () {
 		sliderDots.style.right = dotsRight + 'px';
 		sliderNav.style.right = navRight + 'px';
 	}
-
+	window.addEventListener('resize', function () {
+		if (window.innerWidth > 1199) {
+			const dotsRight = (windowWidth - containerBlock) / 2 + 40;
+			const navRight = (windowWidth - containerBlock) / 2;
+			sliderDots.style.right = dotsRight + 'px';
+			sliderNav.style.right = navRight + 'px';
+		}
+	});
 	// Открытие моб меню по клику на гамбургер
 	const menuToggle = document.querySelector('.menu-toggle');
 	const mobMenu = document.querySelector('#mobile-menu');
