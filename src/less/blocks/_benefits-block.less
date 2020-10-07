@@ -1,5 +1,7 @@
 .benefits {
   background-color: #fff;
+  padding-top: 89px;
+  padding-bottom: 35px;
 
   @media (max-width: 767px) {
     background-color: @greyBg;
@@ -7,7 +9,7 @@
 
   .title-2 {
     display: block;
-
+    text-align: center;
     @media (max-width: 767px) {
       display: none;
     }
@@ -17,56 +19,70 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 89px;
+    margin-top: 53px;
 
     @media (max-width: 767px) {
-      padding: 0;
       margin: 0;
-      background-color: transparent;
     }
+  }
 
-    .benefits-card {
-      width: 100%;
+  .card-wrapper {
+    width: 33.3%;
+    margin-bottom: 72px;
+
+    @media (max-width: 767px) {
+      width: 335px;
+      margin-bottom: 0;
+    }
+  }
+
+  .benefits-card {
+    width: 308px;
+    height: 211px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 767px) {
       width: 335px;
       height: 393px;
+      // width: 100%;
       background-color: #fff;
-      border-radius: 8px;
       padding-top: 35px;
       padding-bottom: 30px;
+      border-radius: 8px;
     }
+  }
 
-    .title-3.title-3-600 {
-      display: none;
-      width: 210px;
-      height: 87px;
-      font-weight: 600;
-      line-height: 1.2;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 44px;
+  .benefits-card .title-2 {
+    display: none;
+    width: 210px;
+    font-weight: 600;
+    line-height: 1.2;
+    // text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 44px;
 
-      @media (max-width: 767px) {
-        display: block;
-      }
+    @media (max-width: 767px) {
+      display: block;
     }
+  }
 
-    .card-icon {
-      position: relative;
-      left: 135px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100px;
-      height: 100px;
-      background-color: @brown;
-      border-radius: 50%;
-      margin-bottom: 21px;
+  .card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: @brown;
+    border-radius: 50%;
+    margin-bottom: 21px;
+    margin-right: auto;
+    margin-left: auto;
 
-      @media (max-width: 767px) {
-        width: 60px;
-        height: 60px;
-      }
+    @media (max-width: 767px) {
+      width: 60px;
+      height: 60px;
 
       svg {
         width: 50px;
@@ -79,46 +95,53 @@
       }
     }
 
-    .title-3 {
-      text-align: center;
-      margin-bottom: 8px;
-
+    svg {
+      width: 50px;
+      height: 50px;
       @media (max-width: 767px) {
-        margin-bottom: 15px;
+        width: 30px;
+        height: 30px;
       }
     }
+  }
 
-    p {
-      width: 285px;
-      height: 44px;
-      text-align: center;
-      margin-right: auto;
-      margin-left: auto;
+  .title-3 {
+    text-align: center;
+    margin-bottom: 8px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  p {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .owl-dots {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    @media (max-width: 767px) {
+      display: flex;
     }
 
-    .owl-dots {
-      position: absolute;
-      display: none;
-      justify-content: center;
-      bottom: 30px;
-      left: 0;
-      right: 0;
-      z-index: 2;
+    .owl-dot {
+      width: 8px;
+      height: 8px;
+      background-color: rgba(228, 228, 228, 0.5);
+      margin-right: 7px;
+      border-radius: 50%;
 
-      @media (max-width: 767px) {
-        display: flex;
-      }
-
-      .owl-dot {
-        width: 8px;
-        height: 8px;
-        background-color: rgba(228, 228, 228, 0.8);
-        margin-right: 7px;
-        border-radius: 50%;
-
-        &.active {
-          background-color: #e4e4e4;
-        }
+      &.active {
+        background-color: #e4e4e4;
       }
     }
   }

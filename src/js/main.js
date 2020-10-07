@@ -10,12 +10,9 @@ $(document).ready(function () {
 			0: {
 				items: 1,
 			},
-			460: {
-				items: 2,
 
-			},
 			768: {
-				items: 3,
+				stagePadding: 20,
 
 			},
 			992: {
@@ -24,9 +21,10 @@ $(document).ready(function () {
 			}
 		}
 
-
 	});
+
 	// destroy слайдера на десктопах
+
 	if ($(window).width() > 1200) {
 		benefitsSlider.trigger('destroy.owl.carousel');
 	}
