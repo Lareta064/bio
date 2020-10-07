@@ -41,15 +41,30 @@ $(document).ready(function () {
 	mainSlider.owlCarousel({
 		items: 1,
 		loop: true,
-		// margin: 30,
+		nav: true,
+		navText: ["<span class='arrow-left'><i class='fas fa-chevron-left'></i></span>", "<span class='arrow-right'><i class='fas fa-chevron-right'></i></span>"],
 		navSpeed: 1000,
 		smartSpeed: 1000,
 		mouseDrag: false,
-
+		autoplay: true,
+		autoplaySpeed: 1000,
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
 
 	});
+	//Определить положение для пагинации слайдера в шапке
+	const windowWidth = window.innerWidth;
+	const containerBlock = document.querySelector('.container').offsetWidth;
+	const sliderDots = document.querySelector('.header-slider__wrapper .owl-dots');
+	const sliderNav = document.querySelector('.header-slider__wrapper .owl-nav');
+
+	if (window.innerWidth > 1199) {
+		const dotsRight = (windowWidth - containerBlock) / 2 + 40;
+		const navRight = (windowWidth - containerBlock) / 2;
+		sliderDots.style.right = dotsRight + 'px';
+		sliderNav.style.right = navRight + 'px';
+	}
+
 	// Открытие моб меню по клику на гамбургер
 	const menuToggle = document.querySelector('.menu-toggle');
 	const mobMenu = document.querySelector('#mobile-menu');
