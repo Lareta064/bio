@@ -5,6 +5,7 @@ $(document).ready(function () {
 		items: 1,
 		loop: true,
 		autoplay: true,
+		margin: 15,
 		autoplaySpeed: 1000,
 		responsive: {
 			0: {
@@ -12,11 +13,12 @@ $(document).ready(function () {
 			},
 
 			768: {
-				stagePadding: 20,
+				items: 2,
+
 
 			},
 			992: {
-				items: 4,
+				items: 3,
 
 			}
 		}
@@ -25,11 +27,11 @@ $(document).ready(function () {
 
 	// destroy слайдера на десктопах
 
-	if ($(window).width() > 1200) {
+	if ($(window).width() > 991) {
 		benefitsSlider.trigger('destroy.owl.carousel');
 	}
 	$(window).resize(function () {
-		if ($(window).width() > 1200) {
+		if ($(window).width() > 991) {
 			benefitsSlider.trigger('destroy.owl.carousel');
 		}
 	});
@@ -49,6 +51,34 @@ $(document).ready(function () {
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
 
+	});
+	// вопрос-ответ слайдер
+	let faqSlider = $('.faq-content');
+	faqSlider.owlCarousel({
+		items: 1,
+		loop: true,
+		autoplay: true,
+		autoplaySpeed: 1000,
+		// responsive: {
+		// 	0: {
+		// 		items: 1,
+		// 	},
+
+		// 	768: {
+		// 		stagePadding: 40,
+
+		// 	}
+		// }
+	});
+	// destroy слайдера на десктопах
+
+	if ($(window).width() > 991) {
+		faqSlider.trigger('destroy.owl.carousel');
+	}
+	$(window).resize(function () {
+		if ($(window).width() > 991) {
+			faqSlider.trigger('destroy.owl.carousel');
+		}
 	});
 	//Определить положение для пагинации слайдера в шапке
 	const windowWidth = window.innerWidth;

@@ -9,12 +9,15 @@
   background-color: #fff;
   cursor: pointer;
 }
+
 .product-card .card-title {
   text-align: center;
 }
+
 .product-card:hover {
   box-shadow: 0px 5px 35px rgba(65, 75, 178, 0.15);
 }
+
 @media (max-width: 767px) {
   .product-card {
     margin-bottom: 20px;
