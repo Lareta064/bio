@@ -10,7 +10,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: @greyBg;
   color: #000;
   font-family: @m400;
   font-size: 14px;
@@ -52,7 +52,7 @@ p {
   display: none;
 
   z-index: -1;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #overlay.active {
@@ -92,7 +92,7 @@ button:focus {
 }
 
 .container {
-  @media(min-width:768px) {
+  @media (min-width: 768px) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -104,7 +104,7 @@ button:focus {
 }
 
 .container--large {
-  @media(max-width:767px) {
+  @media (max-width: 767px) {
     width: 100%;
     max-width: 100%;
     padding-left: 15px;
@@ -144,7 +144,7 @@ button:focus {
   color: #000;
 }
 
-.benefits-card.title-2 {
+.benefits-card .title-2 h2{
   font-size: 24px;
   line-height: 29px;
 }
