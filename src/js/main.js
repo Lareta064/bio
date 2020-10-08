@@ -5,6 +5,7 @@ $(document).ready(function () {
 		items: 1,
 		loop: true,
 		autoplay: true,
+		margin: 15,
 		autoplaySpeed: 1000,
 		responsive: {
 			0: {
@@ -12,11 +13,12 @@ $(document).ready(function () {
 			},
 
 			768: {
-				stagePadding: 20,
+				items: 2,
+
 
 			},
 			992: {
-				items: 4,
+				items: 3,
 
 			}
 		}
@@ -25,11 +27,11 @@ $(document).ready(function () {
 
 	// destroy слайдера на десктопах
 
-	if ($(window).width() > 1200) {
+	if ($(window).width() > 991) {
 		benefitsSlider.trigger('destroy.owl.carousel');
 	}
 	$(window).resize(function () {
-		if ($(window).width() > 1200) {
+		if ($(window).width() > 991) {
 			benefitsSlider.trigger('destroy.owl.carousel');
 		}
 	});
@@ -50,6 +52,25 @@ $(document).ready(function () {
 		animateIn: 'fadeIn',
 
 	});
+	// вопрос-ответ слайдер
+	let faqSlider = $('.faq-content');
+	faqSlider.owlCarousel({
+		items: 1,
+		loop: true,
+		autoplay: true,
+		autoplaySpeed: 1000,
+
+	});
+	// destroy слайдера на десктопах
+
+	if ($(window).width() > 991) {
+		faqSlider.trigger('destroy.owl.carousel');
+	}
+	$(window).resize(function () {
+		if ($(window).width() > 991) {
+			faqSlider.trigger('destroy.owl.carousel');
+		}
+	});
 	//Определить положение для пагинации слайдера в шапке
 	const windowWidth = window.innerWidth;
 	const containerBlock = document.querySelector('.container').offsetWidth;
@@ -62,7 +83,14 @@ $(document).ready(function () {
 		sliderDots.style.right = dotsRight + 'px';
 		sliderNav.style.right = navRight + 'px';
 	}
-
+	window.addEventListener('resize', function () {
+		if (window.innerWidth > 1199) {
+			const dotsRight = (windowWidth - containerBlock) / 2 + 40;
+			const navRight = (windowWidth - containerBlock) / 2;
+			sliderDots.style.right = dotsRight + 'px';
+			sliderNav.style.right = navRight + 'px';
+		}
+	});
 	// Открытие моб меню по клику на гамбургер
 	const menuToggle = document.querySelector('.menu-toggle');
 	const mobMenu = document.querySelector('#mobile-menu');
@@ -131,5 +159,52 @@ $(document).ready(function () {
 			item.classList.toggle('visible');
 		}
 	});
+	// Кастомный выпадающий список
+	const selectElement = document.querySelector('.form-select');
+	if (selectElement) {
+		const selectInput = selectElement.querySelector('input');
+		const selectOptions = selectElement.querySelector('.form-select__options');
+		const selectArrow = selectElement.querySelector('.form-select__icon');
 
+
+
+		selectArrow.addEventListener('click', function () {
+
+			if (selectOptions.classList.contains('active')) {
+				this.classList.remove('rotate');
+				selectOptions.classList.remove('active');
+			} else {
+				this.classList.add('rotate');
+				selectOptions.classList.add('active');
+			}
+
+		});
+
+		//клик по выпадающему списку селекта
+		selectOptions.addEventListener('click', function (e) {
+			if (e.target.tagName == 'LI') {
+				selectInput.value = e.target.textContent;
+				this.classList.remove('active');
+				selectArrow.classList.remove('rotate');
+				// console.log(e.target.textContent)
+			}
+
+		});
+	}
+	// маска для телефона
+	$(".phone").mask("+7(999)999-99-99");
+	$.fn.setCursorPosition = function (pos) {
+		if ($(this).get(0).setSelectionRange) {
+			$(this).get(0).setSelectionRange(pos, pos);
+		} else if ($(this).get(0).createTextRange) {
+			var range = $(this).get(0).createTextRange();
+			range.collapse(true);
+			range.moveEnd('character', pos);
+			range.moveStart('character', pos);
+			range.select();
+		}
+	};
+	$('input.phone').click(function () {
+		$(this).setCursorPosition(3); // set position number
+	});
 })

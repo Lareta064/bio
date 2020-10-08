@@ -5,11 +5,14 @@
 
   @media (max-width: 767px) {
     background-color: @greyBg;
+    padding-top: 45px;
+    padding-bottom: 0;
   }
 
   .title-2 {
     display: block;
     text-align: center;
+
     @media (max-width: 767px) {
       display: none;
     }
@@ -30,8 +33,17 @@
     width: 33.3%;
     margin-bottom: 72px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       width: 335px;
+      max-width: 335px;
+      margin-bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 374px) {
+      width: 290px;
+      max-width: 290px;
       margin-bottom: 0;
     }
   }
@@ -42,7 +54,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       width: 335px;
       height: 393px;
       // width: 100%;
@@ -50,6 +62,12 @@
       padding-top: 35px;
       padding-bottom: 30px;
       border-radius: 8px;
+    }
+
+    @media (max-width: 374px) {
+      width: 290px;
+      max-width: 290px;
+      margin-bottom: 0;
     }
   }
 
@@ -98,6 +116,7 @@
     svg {
       width: 50px;
       height: 50px;
+
       @media (max-width: 767px) {
         width: 30px;
         height: 30px;
@@ -128,10 +147,10 @@
     left: 0;
     right: 0;
     z-index: 2;
+    display: flex;
+    // @media (max-width: 767px) {
 
-    @media (max-width: 767px) {
-      display: flex;
-    }
+    // }
 
     .owl-dot {
       width: 8px;

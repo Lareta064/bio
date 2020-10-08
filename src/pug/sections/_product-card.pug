@@ -1,24 +1,28 @@
-section(style="margin-bottom: 50px;")
+section.products
+	include _manufacturer-info.pug
 	.container
-		.row
-			.col-md-4
-				a(href="#").product-card
-					.card-img
-						img(src="img/products/indicator.png" width='400' alt="indicator")
-					.card-title
-						.text-16
-							p Индикатор-БИО
-			.col-md-4
-				a(href="#").product-card
-					.card-img
-						img(src="img/products/cheap.png" width='400' alt="cheap")
-					.card-title
-						.text-16
-							p Расходные материалы (ПЦР-чип)
-			.col-md-4
-				a(href="#").product-card
-					.card-img
-						img(src="img/products/complect.png" width='400' alt="complect")
-					.card-title
-						.text-16
-							p Комплектация мобильной ПЦР-лаборатории "Индикатор-БИО"							
+		.title-2.text-center
+			h2 Продукция
+		.poducts-cards
+			.row
+				.col-md-4
+					a(href="#").product-card
+						.card-img
+							img(src="img/products/indicator.png" width='400' alt="indicator")
+						.card-title
+							.text-16
+								p Индикатор-БИО
+				.col-md-4
+					a(href="#").product-card
+						.card-img
+							img(src="img/products/cheap.png" width='400' alt="cheap")
+						.card-title
+							.text-16
+								p Расходные материалы (ПЦР-чип)
+				.col-md-4
+					a(href="#").product-card
+						.card-img
+							img(src="img/products/complect.png" width='400' alt="complect")
+						.card-title
+							.text-16
+								p Комплектация мобильной ПЦР-лаборатории "Индикатор-БИО"							
