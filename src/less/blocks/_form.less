@@ -27,6 +27,20 @@
 	padding: 60px;
 	padding-top: 50px;
 
+	@media(max-width:1199px) {
+		padding-top: 35px;
+		padding-bottom: 35px;
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+
+	@media(max-width:767px) {
+		padding-top: 35px;
+		padding-bottom: 35px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 
 }
 
@@ -37,11 +51,19 @@
 #contactForm .modal-form-title {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 	margin-bottom: 35px;
+
+	@media(max-width:1199px) {
+		margin-bottom: 28px;
+	}
 }
 
 #contactForm .modal-dialog {
-	max-width: 830px;
+	@media(min-width: 992px) {
+		max-width: 830px;
+	}
+
 }
 
 .form-item input,
@@ -51,11 +73,16 @@
 	border-radius: 6px;
 	height: 40px;
 	width: 100%;
+	padding-left: 15px;
+	padding-right: 10px;
+	outline: none;
 }
 
 .form-item textarea {
 	height: 136px;
 	resize: none;
+	padding: 15px;
+	padding-right: 15px;
 }
 
 .form-row {
@@ -64,8 +91,16 @@
 	margin-left: 0;
 	margin-right: 0;
 
+	@media(max-width:767px) {
+		flex-direction: column;
+	}
+
 	.form-item {
 		width: 48%;
+
+		@media(max-width:767px) {
+			width: 100%;
+		}
 	}
 }
 
@@ -84,9 +119,7 @@
 	position: relative;
 	z-index: 2;
 	padding-left: 12px;
-	// font-size: 12px;
-	// line-height: 19px;
-	// border: 1px solid #EEEEEE;
+
 	height: 40px;
 	border-radius: 6px;
 }
@@ -166,7 +199,7 @@
 	height: 40px;
 }
 
-.form-select__icon i {
+.form-select__icon svg {
 	-webkit-transition: .5s;
 	-o-transition: .5s;
 	transition: .5s;
@@ -182,7 +215,7 @@
 	background-color: #EEEEEE;
 }
 
-.form-select__icon.rotate i {
+.form-select__icon.rotate svg {
 	-webkit-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
 	transform: rotate(180deg);
