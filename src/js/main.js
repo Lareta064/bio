@@ -72,13 +72,13 @@ $(document).ready(function () {
 		}
 	});
 	//Определить положение для пагинации слайдера в шапке
-	if (mainSlider) {
+	const windowWidth = window.innerWidth;
+	const containerBlock = document.querySelector('.container').offsetWidth;
+	const sliderDots = document.querySelector('.header-slider__wrapper .owl-dots');
+	const sliderNav = document.querySelector('.header-slider__wrapper .owl-nav');
+	if (sliderDots) {
+		console.log(sliderDots);
 
-
-		const windowWidth = window.innerWidth;
-		const containerBlock = document.querySelector('.container').offsetWidth;
-		const sliderDots = document.querySelector('.header-slider__wrapper .owl-dots');
-		const sliderNav = document.querySelector('.header-slider__wrapper .owl-nav');
 
 		if (window.innerWidth > 1199) {
 			const dotsRight = (windowWidth - containerBlock) / 2 + 40;
@@ -164,36 +164,63 @@ $(document).ready(function () {
 		}
 	});
 	// Кастомный выпадающий список
-	const selectElement = document.querySelector('.form-select');
-	if (selectElement) {
-		const selectInput = selectElement.querySelector('input');
-		const selectOptions = selectElement.querySelector('.form-select__options');
-		const selectArrow = selectElement.querySelector('.form-select__icon');
+	const selectElements = document.querySelectorAll('.form-select');
+	if (selectElements) {
+		for (let item of selectElements) {
+
+
+			const selectInput = item.querySelector('input');
+			const selectOptions = item.querySelector('.form-select__options');
+			const selectArrow = item.querySelector('.form-select__icon');
 
 
 
-		selectArrow.addEventListener('click', function () {
+			selectArrow.addEventListener('click', function () {
 
-			if (selectOptions.classList.contains('active')) {
-				this.classList.remove('rotate');
-				selectOptions.classList.remove('active');
-			} else {
-				this.classList.add('rotate');
-				selectOptions.classList.add('active');
-			}
+				if (selectOptions.classList.contains('active')) {
+					this.classList.remove('rotate');
+					selectOptions.classList.remove('active');
+				} else {
+					this.classList.add('rotate');
+					selectOptions.classList.add('active');
+				}
 
-		});
+			});
 
-		//клик по выпадающему списку селекта
-		selectOptions.addEventListener('click', function (e) {
-			if (e.target.tagName == 'LI') {
-				selectInput.value = e.target.textContent;
-				this.classList.remove('active');
-				selectArrow.classList.remove('rotate');
-				// console.log(e.target.textContent)
-			}
+			//клик по выпадающему списку селекта
+			selectOptions.addEventListener('click', function (e) {
+				if (e.target.tagName == 'LI') {
+					selectInput.value = e.target.textContent;
+					this.classList.remove('active');
+					selectArrow.classList.remove('rotate');
+					// console.log(e.target.textContent)
+				}
 
-		});
+			});
+		}
 	}
+	// счетчик количества
+	const productCounter = document.querySelector('.product-counter');
+	if (productCounter) {
+		const btnPlus = productCounter.querySelector('.product-counter--plus');
+		const btnMinus = productCounter.querySelector('.product-counter--minus');
+		let inputItem = productCounter.querySelector('input');
+		let inputItemValue = +productCounter.querySelector('input').value;
 
+		btnPlus.addEventListener('click', function (e) {
+
+			inputItemValue += 1;
+			inputItem.value = inputItemValue;
+		});
+		btnMinus.addEventListener('click', function (e) {
+			if (inputItemValue == 1) {
+				inputItemValue = 1;
+			} else {
+				inputItemValue -= 1;
+				inputItem.value = inputItemValue;
+			}
+
+		})
+
+	}
 })

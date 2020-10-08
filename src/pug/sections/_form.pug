@@ -1,5 +1,5 @@
 
-#contactForm.modal.fade(tabindex="-1" role="dialog"  aria-hidden="true")
+#contactForm.modal-form.modal.fade(tabindex="-1" role="dialog"  aria-hidden="true")
 	.modal-dialog.modal-dialog-centered(role="document")
 		.modal-content
 			.modal-form-title
@@ -9,6 +9,73 @@
 					span(aria-hidden="true")
 						+close
 			.modal-body
+				.feedback-form
+					form.contact-form
+						.form-item
+							label Ф.И.О 
+								span * 
+							input(type="text" name="userName" )
+						.form-item
+							label Организация 
+								span * 
+							input(type="text" name="company" )
+						.form-item.form-select
+							label Город
+								span * 
+							.form-select__icon
+								+arrow-downDark
+							input(type="text" name="city"  autocomplete="off")
+							ul.form-select__options
+								li Москва
+								li Питер
+								li Самара
+								li Владивосток
+						
+						.form-row
+							.form-item
+								label Телефон
+									span * 
+								input(type="text" class="phone" name="userPhone" )
+							.form-item
+								label Почта
+									span * 
+								input(type="text" name="userEmail" )
+						.form-item
+							textarea(type="text" name="message"  )
+							
+						.form-item.agree-text
+							label(class="form-label")
+								input(class="form-checkbox" type="checkbox" name="agreePolitic")
+								span.custom-checkbox
+								| Принимаю  #[a(href="#") условия обработки] персональных данных.
+						.form-btn
+							button.button.button-brown(type="submit" ) Купить
+#buyForm.modal-form.modal.fade(tabindex="-1" role="dialog"  aria-hidden="true")
+	.modal-dialog.modal-dialog-centered(role="document")
+		.modal-content
+			.modal-form-title
+				.title-3
+					h3 Форма обратной связи
+				button.close(type="button" data-dismiss="modal" aria-label="Close")
+					span(aria-hidden="true")
+						+close
+			.modal-body
+				.form-row
+					.form-item.form-select
+							label Наименование продукта
+								span * 
+							.form-select__icon
+								+arrow-downDark
+							input(type="text" name="productName" value="Индикатор-БИО" autocomplete="off")
+							ul.form-select__options
+								li Индикатор-БИО
+								li Расходные материалы (ПЦР-чип)
+								li Комплектация мобильной ПЦР-лаборатории «Индикатор-БИО»
+								
+					.form-item
+						label Количество
+							span * 
+						+counter
 				.feedback-form
 					form.contact-form
 						.form-item
