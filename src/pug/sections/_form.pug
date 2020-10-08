@@ -3,31 +3,50 @@
 	.modal-dialog.modal-dialog-centered(role="document")
 		.modal-content
 			.modal-form-title
+				.title-3
+					h3 Форма обратной связи
 				button.close(type="button" data-dismiss="modal" aria-label="Close")
 					span(aria-hidden="true")
-						i.fas.fa-times
+						+close
 			.modal-body
 				.feedback-form
 					form.contact-form
-						.title-3
-							h3 Форма обратной связи
-						.form-group
-							label(for="userName") Ф.И.О 
+						.form-item
+							label Ф.И.О 
 								span * 
 							input(type="text" name="userName" )
-						.form-group
-							label(for="userName") Организация 
+						.form-item
+							label Организация 
 								span * 
-							input(type="text" name="userName" )
+							input(type="text" name="company" )
+						.form-item.form-select
+							label Город
+								span * 
+							.form-select__icon
+								+arrow-downDark
+							input(type="text" name="city"  autocomplete="off")
+							ul.form-select__options
+								li Москва
+								li Питер
+								li Самара
+								li Владивосток
 						
-						
-						.form-group
+						.form-row
+							.form-item
+								label Телефон
+									span * 
+								input(type="text" class="phone" name="userPhone" )
+							.form-item
+								label Почта
+									span * 
+								input(type="text" name="userEmail" )
+						.form-item
 							textarea(type="text" name="message"  )
-							span.fake-placeholder Комментарий к заказу
-						.form-group.agree-text
+							
+						.form-item.agree-text
 							label(class="form-label")
 								input(class="form-checkbox" type="checkbox" name="agreePolitic")
 								span.custom-checkbox
-								| Принимаю  #[a(href="#") условия обработки] моих данных.
-						.form-group
-							input.page-btn2(type="submit" value="Отправить")
+								| Принимаю  #[a(href="#") условия обработки] персональных данных.
+						.form-btn
+							button.button.button-brown(type="submit" ) Купить
