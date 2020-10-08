@@ -72,29 +72,25 @@ $(document).ready(function () {
 		}
 	});
 	//Определить положение для пагинации слайдера в шапке
-	if (mainSlider) {
+	const windowWidth = window.innerWidth;
+	const containerBlock = document.querySelector('.container').offsetWidth;
+	const sliderDots = document.querySelector('.header-slider__wrapper .owl-dots');
+	const sliderNav = document.querySelector('.header-slider__wrapper .owl-nav');
 
-
-		const windowWidth = window.innerWidth;
-		const containerBlock = document.querySelector('.container').offsetWidth;
-		const sliderDots = document.querySelector('.header-slider__wrapper .owl-dots');
-		const sliderNav = document.querySelector('.header-slider__wrapper .owl-nav');
-
+	if (window.innerWidth > 1199) {
+		const dotsRight = (windowWidth - containerBlock) / 2 + 40;
+		const navRight = (windowWidth - containerBlock) / 2;
+		sliderDots.style.right = dotsRight + 'px';
+		sliderNav.style.right = navRight + 'px';
+	}
+	window.addEventListener('resize', function () {
 		if (window.innerWidth > 1199) {
 			const dotsRight = (windowWidth - containerBlock) / 2 + 40;
 			const navRight = (windowWidth - containerBlock) / 2;
 			sliderDots.style.right = dotsRight + 'px';
 			sliderNav.style.right = navRight + 'px';
 		}
-		window.addEventListener('resize', function () {
-			if (window.innerWidth > 1199) {
-				const dotsRight = (windowWidth - containerBlock) / 2 + 40;
-				const navRight = (windowWidth - containerBlock) / 2;
-				sliderDots.style.right = dotsRight + 'px';
-				sliderNav.style.right = navRight + 'px';
-			}
-		});
-	}
+	});
 	// Открытие моб меню по клику на гамбургер
 	const menuToggle = document.querySelector('.menu-toggle');
 	const mobMenu = document.querySelector('#mobile-menu');
