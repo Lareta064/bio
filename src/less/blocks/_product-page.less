@@ -1,0 +1,88 @@
+.tabs {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 35px;
+
+  .tablinks span {
+    margin-right: 10px;
+  }
+
+  .tablinks a {
+    align-items: center;
+  }
+}
+
+.product-block {
+  display: flex;
+  width: 100%;
+  max-width: 1260px;
+//   max-height: 802px;
+  background: #ffffff;
+  padding-right: 20px;
+
+
+  .fotorama {
+    display: block;
+    width: 65%;
+    max-width: 830px;
+    
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .fotoslider {
+    display: none;
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  .block-buy {
+    width: 34%;
+    max-width: 429px;
+    padding-left: 47px;
+    border-left: 1px solid rgba(228, 228, 228, 0.8);
+    padding-bottom: 112px;
+
+    .title-2 h2 {
+      margin-top: 45px;
+      margin-bottom: 29px;
+    }
+
+    .title-3 h3 {
+      text-align: left;
+      margin-bottom: 18px;
+    }
+
+    .text-block li {
+      //   width: 350px;
+      border-bottom: 1px solid #e4e4e4;
+      padding-bottom: 15px;
+    }
+
+    .text-block li + li {
+      padding-top: 20px;
+    }
+
+    .text-block li:last-child{
+        border-bottom: none;
+    }
+
+    .buy {
+      display: flex;
+      margin-bottom: 44px;
+
+      .number {
+        margin-right: 21px;
+      }
+
+      .button-brown {
+        width: 183px;
+      }
+    }
+  }
+}

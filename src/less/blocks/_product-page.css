@@ -1,0 +1,73 @@
+.tabs {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.tabs .tablinks span {
+  margin-right: 10px;
+}
+.tabs .tablinks a {
+  align-items: center;
+}
+.product-block {
+  display: flex;
+  width: 100%;
+  max-width: 1260px;
+  background: #ffffff;
+  padding-right: 20px;
+}
+.product-block .fotorama {
+  display: block;
+  width: 65%;
+  max-width: 830px;
+}
+@media (max-width: 767px) {
+  .product-block .fotorama {
+    display: none;
+  }
+}
+.product-block .fotoslider {
+  display: none;
+}
+@media (max-width: 767px) {
+  .product-block .fotoslider {
+    display: block;
+  }
+}
+.product-block .block-buy {
+  width: 34%;
+  max-width: 429px;
+  padding-left: 47px;
+  border-left: 1px solid rgba(228, 228, 228, 0.8);
+  padding-bottom: 112px;
+}
+.product-block .block-buy .title-2 h2 {
+  margin-top: 45px;
+  margin-bottom: 29px;
+}
+.product-block .block-buy .title-3 h3 {
+  text-align: left;
+  margin-bottom: 18px;
+}
+.product-block .block-buy .text-block li {
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 15px;
+}
+.product-block .block-buy .text-block li + li {
+  padding-top: 20px;
+}
+.product-block .block-buy .text-block li:last-child {
+  border-bottom: none;
+}
+.product-block .block-buy .buy {
+  display: flex;
+  margin-bottom: 44px;
+}
+.product-block .block-buy .buy .number {
+  margin-right: 21px;
+}
+.product-block .block-buy .buy .button-brown {
+  width: 183px;
+}
