@@ -72,19 +72,56 @@
 .product-block .block-buy .buy .button-brown {
   width: 183px;
 }
-.description-block {
+.description-blocks {
+  display: flex;
+  justify-content: space-between;
+}
+.description-blocks .description-block,
+.description-blocks .about-block {
   width: 615px;
   padding: 56px 83px 30px 60px;
   background-color: #ffffff;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
-.description-block .title-3 h3 {
+.description-blocks .description-block .title-3 h3,
+.description-blocks .about-block .title-3 h3 {
   margin-bottom: 35px;
 }
-.description-block p {
+.description-blocks .description-block p,
+.description-blocks .about-block p {
   letter-spacing: -0.015em;
 }
-.description-block .text-20 p {
-  margin-top: 30px ;
+.description-blocks .description-block .text-20 p,
+.description-blocks .about-block .text-20 p {
+  margin-top: 30px;
   margin-bottom: 128px;
+}
+.description-blocks .about-block .title-3 h3 {
+  margin-bottom: 0;
+}
+.description-blocks .about-block .text-20 p {
+  margin-bottom: 30px;
+}
+.description-blocks .about-block p + p {
+  margin-top: 30px;
+}
+.manufacturer-blocks {
+  display: flex;
+  justify-content: space-between;
+}
+.manufacturer-blocks .manufacturer-1,
+.manufacturer-blocks .manufacturer-2 {
+  padding: 25px 55px 30px 35px;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 293px;
+}
+.manufacturer-blocks .manufacturer-1 .logo,
+.manufacturer-blocks .manufacturer-2 .logo {
+  margin-bottom: 10px;
+}
+.manufacturer-blocks .manufacturer-1 .link,
+.manufacturer-blocks .manufacturer-2 .link {
+  margin-top: 85px;
 }
