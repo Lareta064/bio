@@ -1,0 +1,53 @@
+section.faq-page
+	.container
+		.faq-page__content
+			.title-2
+				h2 Вопрос-ответ
+			#accordion.faq-accordion
+				.card
+					#headingOne.card-header.collapsed(data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+						.title-3
+							h3
+								button Какие термостаты и в каком количестве должны быть в ПЦР&#8209;лаборатории?
+						.accordion-icon
+							+arrow-downDark
+					#collapseOne.collapse(aria-labelledby='headingOne', data-parent='#accordion')
+						.card-body
+							.text-13
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat assumenda accusamus eum, distinctio enim nisi laboriosam quo repudiandae, totam sapiente itaque nulla odio repellendus. Temporibus libero quam impedit laudantium. Sit?
+				.card
+					#headingTwo.card-header.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+						.title-3
+							h3
+								button «Инструктаж и обучение персонала заказчика работе на приборе»
+						.accordion-icon
+							+arrow-downDark
+					#collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
+						.card-body
+							.text-13
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat assumenda accusamus eum, distinctio enim nisi laboriosam quo repudiandae, totam sapiente itaque nulla odio repellendus. Temporibus libero quam impedit laudantium. Sit?
+				.card
+					#headingThree.card-header.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+						.title-3
+							h3
+								button Как часто надо проводить диагностику приборов?
+						.accordion-icon
+							+arrow-downDark
+					#collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+						.card-body
+							.card-body
+								.text-13
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat assumenda accusamus eum, distinctio enim nisi laboriosam quo repudiandae, totam sapiente itaque nulla odio repellendus. Temporibus libero quam impedit laudantium. Sit?
+				.card
+					#headingFour.card-header.collapsed(data-toggle='collapse', data-target='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+						.title-3
+							h3
+								button Как стать нашим партнером?
+						.accordion-icon
+							+arrow-downDark
+					#collapseFour.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+						.card-body
+							.card-body
+								.text-13
+									p По вопросам покупки или заключения дистрибуционного соглашения/научного сотрудничества обращайтесь по телефону: #[span +7 (499) 739-96-98], #[span +7 (977) 428-99-96], #[a(href="#!") необходимая документация]
+				

@@ -45,11 +45,20 @@
 
 .company-description__article {
 	display: flex;
+	max-width: 600px;
+
+	@media(max-width:1364px) {
+		max-width: 100%;
+	}
 
 	.text-20 p {
 		@media(min-width:768px) and (max-width:991px) {
 			font-size: 17px;
 		}
+	}
+
+	p+p {
+		margin-top: 25px;
 	}
 }
 
