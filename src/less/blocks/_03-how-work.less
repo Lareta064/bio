@@ -1,12 +1,20 @@
+.company,
 .how-work {
 	padding-top: 40px;
 
 	@media(max-width:767px) {
 		overflow: hidden;
 	}
+
+	.container.mob-padding {
+		@media(max-width:380px) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
 }
 
-.how-work__banner {
+.banner-block {
 	background-color: #fff;
 	border-radius: 10px;
 	display: flex;
@@ -23,9 +31,32 @@
 	}
 }
 
-.how-work__img {
-	width: 66%;
+.company .banner-block {
+	@media(max-width:991px) {
+		flex-direction: column;
+		padding-right: 0;
+		padding-bottom: 45px;
+		background-color: transparent;
+	}
+
+	@media(max-width:767px) {
+		border-radius: 0;
+	}
+
+	@media(max-width:380px) {
+		.banner-block__img {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.banner-block__img {
+	width: 830px;
 	max-width: 830px;
+
+	@media(max-width:1364px) {
+		width: 66%;
+	}
 
 	@media(max-width:1199px) {
 		width: 48%;
@@ -36,11 +67,11 @@
 	}
 
 	@media(max-width:380px) {
-		transform: scale(1.3);
+		// transform: scale(1.3);
 	}
 }
 
-.how-work__text {
+.banner-block__text {
 	padding-top: 45px;
 	width: 32%;
 	max-width: 310px;
@@ -74,6 +105,9 @@
 
 	@media(max-width:380px) {
 		margin-bottom: 60px;
+		max-width: 345px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	p+p {
@@ -87,6 +121,7 @@
 
 }
 
+.company,
 .how-work {
 	.title-2 {
 		margin-bottom: 25px;
