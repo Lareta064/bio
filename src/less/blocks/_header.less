@@ -40,8 +40,25 @@
 		display: block;
 		height: 24px;
 		width: 222px;
-
 		position: relative;
+
+		svg path:first-child {
+			transition: .5s;
+		}
+
+		&:hover {
+			svg path:first-child {
+				// transform: rotate(360deg);
+				fill: @brown;
+				fill: @yellow;
+			}
+
+			svg path {
+				// transform: rotate(360deg);
+				fill: @brown;
+
+			}
+		}
 	}
 
 

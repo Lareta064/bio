@@ -75,15 +75,33 @@
 	}
 }
 
-@media(min-width:1365px) {
-	.text-13.link a span {
-		background: none;
+.manufacturer .text-13.link a span {
+	background: none;
 
+	color: #000;
+	cursor: default;
+	pointer-events: none;
+
+	&:hover {
 		color: #000;
-		cursor: default;
-		pointer-events: none;
 	}
 }
+
+.manufacturer .text-13.link a:hover {
+	opacity: 1;
+	cursor: default;
+}
+
+//заголовок -ссылка на маленьких экранах -это раскомментировать, на 90 строке -закомментировать
+// @media(min-width:1365px) {
+// 	.text-13.link a span {
+// 		background: none;
+
+// 		color: #000;
+// 		cursor: default;
+// 		pointer-events: none;
+// 	}
+// }
 
 @media(max-width:1364px) {
 	.manufacturer-info__text .link {
