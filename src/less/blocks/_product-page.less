@@ -85,10 +85,18 @@
   border-bottom: none;
 }
 
+.text-block li:last-child {
+  padding-bottom: 0;
+}
+
 .indicator-blocks {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
 
   .double-block {
     .description-block {
@@ -110,10 +118,43 @@
   }
 }
 
-.description-block,
+.description-block {
+  width: 615px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  .description-block__body {
+    padding-top: 56px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+    padding-left: 60px;
+
+    .title-3 h3 {
+      margin-bottom: 35px;
+    }
+
+    p {
+      letter-spacing: -0.015em;
+    }
+
+    .text-20 p {
+      margin-top: 30px;
+    }
+  }
+  .description-block__footer {
+    height: 80px;
+    border-top: 1px solid @borderGrey;
+    padding-left: 60px;
+    padding-right: 70px;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+  }
+}
+
 .about-block {
   width: 615px;
-  padding: 56px 83px 30px 60px;
+  padding: 56px 70px 25px 60px;
   background-color: #ffffff;
   border-radius: 10px;
 
@@ -135,10 +176,15 @@
   display: flex;
   justify-content: space-between;
 
-  .manufacturer-1,
-  .manufacturer-2 {
-    padding: 25px 55px 30px 35px;
+  @media (max-width: 767px) {
+    display: none;
+  }
 
+  .manufacturer-item {
+    padding-top: 25px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 30px;
     background: #ffffff;
     border-radius: 10px;
     width: 293px;
@@ -146,8 +192,8 @@
     .logo {
       display: flex;
       margin-bottom: 10px;
-      align-items:center;
-      .logo__img{
+      align-items: center;
+      .logo__img {
         margin-right: 11px;
       }
     }
@@ -167,10 +213,45 @@
   }
 }
 
+.manufacturer-blocks__mob {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+    margin-top: 30px;
+
+    .manufacturer-item {
+      display: flex;
+      flex-flow: row-reverse;
+    }
+
+    .manufacturer-item:first-child {
+      border-bottom: 1px solid @borderGrey;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .manufacturer-item:last-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    .manufacturer-info__link{
+      .link{
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 .consumables-blocks {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
 
   .description-block {
     width: 830px;
@@ -179,13 +260,36 @@
   .manufacturer-blocks {
     display: block;
 
-    .manufacturer-1,
-    .manufacturer-2 {
-      width: 401px;
+    @media (max-width: 767px) {
+      display: none;
     }
 
-    .manufacturer-1 {
+    .manufacturer-item {
+      width: 401px;
+
+      .logo {
+        margin-bottom: 0;
+      }
+
+      .link {
+        margin-top: 100px;
+      }
+    }
+
+    .manufacturer-item:first-child {
       margin-bottom: 30px;
+    }
+  }
+
+  .manufacturer-blocks__mob {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+
+      .manufacturer-item:first-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -194,17 +298,51 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
-  .description-block + .description-block {
-    margin-top: 30px;
+
+  @media (max-width: 767px) {
+    display: block;
   }
+
+  .title-3 h3 {
+    margin-bottom: 35px;
+  }
+
   .description-block {
-    .title-3:last-child {
+    margin-bottom: 30px;
+  }
+
+  .specification-block,
+  .capacities-block {
+    width: 615px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-top: 55px;
+    padding-right: 65px;
+    padding-bottom: 55px;
+    padding-left: 60px;
+
+    .title-3 h3:last-child {
       margin-top: 20px;
     }
   }
 
-  .col-right{
-    .description-block{
+  .specification-block {
+    display: block; 
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .specification-block__mob {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  .col-right {
+    .capacities-block {
       margin-bottom: 30px;
     }
   }
