@@ -298,7 +298,7 @@
     }
 
     .manufacturer-item {
-      max-width: 401px;
+      width: 401px;
 
       .logo {
         margin-bottom: 0;
@@ -320,16 +320,19 @@
     @media (max-width: 767px) {
       display: block;
 
+      .manufacturer-item {
+        width: 100%;
+      }
+
       .manufacturer-item:first-child {
         margin-bottom: 0;
       }
 
-      .manufacturer-item{
+      .manufacturer-item {
         .link {
           margin-top: 0;
         }
       }
-      
     }
   }
 }

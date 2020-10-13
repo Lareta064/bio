@@ -37,14 +37,22 @@ section.rating-tab
 			.container
 				// ========== Индикатор-БИО ==========
 				.product-block
-					.fotorama(data-nav='thumbs')
-						a(href='img/slider/indicator_max.png')
-							img(src='img/slider/indicator-min1.png' width='80' height='80')
-						a(href='indicator_max.png')
-							img(src='img/slider/indicator-min2.png' width='80' height='80')
-						a(href='indicator_max.png')
-							img(src='img/slider/indicator-min3.png' width='80' height='80')
-					.fotoslider
+					.top-slide.owl-carousel
+						.item
+							img(src='img/slider/indicator-min1.png' width='80' height='80' alt='img1' data-icon='1-sm.jpg')
+						.item
+							img(src='img/slider/indicator-min2.png' width='80' height='80' alt='img2' data-icon='2-sm.jpg')
+						.item
+							img(src='img/slider/indicator-min3.png' width='80' height='80' alt='img3' data-icon='3-sm.jpg')
+					.after-slide
+					//- .fotorama(data-nav='thumbs')
+					//- 	a(href='img/slider/indicator_max.png')
+					//- 		img(src='img/slider/indicator-min1.png' width='80' height='80')
+					//- 	a(href='indicator_max.png')
+					//- 		img(src='img/slider/indicator-min2.png' width='80' height='80')
+					//- 	a(href='indicator_max.png')
+					//- 		img(src='img/slider/indicator-min3.png' width='80' height='80')
+					//- .fotoslider
 
 					.block-buy
 						.title-2
