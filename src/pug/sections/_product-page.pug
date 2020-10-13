@@ -25,26 +25,27 @@ section.product
 
 
 
-section.rating-tab
-	nav.rating-tab-nav
+section.product-tab
+	nav.product-tab-nav
 		#nav-tab.nav.nav-tabs(role="tablist")
-			a#nav-one-tab.nav-item.nav-link.active(data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true") Континентальный кубок
-			a#nav-two-tab.nav-item.nav-link(data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false") Кубок России
-			a#nav-three-tab.nav-item.nav-link(data-toggle="tab" href="#nav-three" role="tab" aria-controls="nav-three" aria-selected="false") Рейтинг ФЛГР
+			a#nav-one-tab.nav-item.nav-link.active(data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true") Индикатор&#8209;БИО
+				+indicator
+			a#nav-two-tab.nav-item.nav-link(data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false") Расходные материалы (ПЦР&#8209;чип)
+			a#nav-three-tab.nav-item.nav-link(data-toggle="tab" href="#nav-three" role="tab" aria-controls="nav-three" aria-selected="false") Комплектация мобильной ПЦР&#8209;лаборатории «Индикатор&#8209;БИО»
 	#nav-tabContent.tab-content
 		#nav-one.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-one-tab")
 
 			.container
 				// ========== Индикатор-БИО ==========
-				.product-block
-					.top-slide.owl-carousel
-						.item
-							img(src='img/slider/indicator-min1.png' width='80' height='80' alt='img1' data-icon='1-sm.jpg')
-						.item
-							img(src='img/slider/indicator-min2.png' width='80' height='80' alt='img2' data-icon='2-sm.jpg')
-						.item
-							img(src='img/slider/indicator-min3.png' width='80' height='80' alt='img3' data-icon='3-sm.jpg')
-					.after-slide
+				//- .product-block
+				//- 	.top-slide.owl-carousel
+				//- 		.item
+				//- 			img(src='img/slider/indicator-min1.png' width='80' height='80' alt='img1' data-icon='1-sm.jpg')
+				//- 		.item
+				//- 			img(src='img/slider/indicator-min2.png' width='80' height='80' alt='img2' data-icon='2-sm.jpg')
+				//- 		.item
+				//- 			img(src='img/slider/indicator-min3.png' width='80' height='80' alt='img3' data-icon='3-sm.jpg')
+				//- 	.after-slide
 					//- .fotorama(data-nav='thumbs')
 					//- 	a(href='img/slider/indicator_max.png')
 					//- 		img(src='img/slider/indicator-min1.png' width='80' height='80')
