@@ -1,39 +1,43 @@
 section.product
 	.container
-		.tabs
-			.tablinks
-				span 
-					+indicator
-				a(href="#") Индикатор-БИО
-			.tablinks
-				span
-					+tube
-				a(href="#") Расходные материалы (ПЦР-чип)
-			.tablinks
-				span
-					+baggage2
-				a(href="#") Комплектация мобильной ПЦР-лаборатории «Индикатор-БИО»
+		//- .tabs
+		//- 	.tablinks
+		//- 		span 
+		//- 			+indicator
+		//- 		a(href="#") Индикатор-БИО
+		//- 	.tablinks
+		//- 		span
+		//- 			+tube
+		//- 		a(href="#") Расходные материалы (ПЦР-чип)
+		//- 	.tablinks
+		//- 		span
+		//- 			+baggage2
+		//- 		a(href="#") Комплектация мобильной ПЦР-лаборатории «Индикатор-БИО»
 
 
-		#nav-two.tab-pane.fade(role="tabpanel" aria-labelledby="nav-two-tab")
-			.rating-results
-				h1 ggegerge
+		//- #nav-two.tab-pane.fade(role="tabpanel" aria-labelledby="nav-two-tab")
+		//- 	.rating-results
+		//- 		h1 ggegerge
 
-		#nav-three.tab-pane.fade(role="tabpanel" aria-labelledby="nav-three-tab")
-			.rating-results
-			h1 51112
+		//- #nav-three.tab-pane.fade(role="tabpanel" aria-labelledby="nav-three-tab")
+		//- 	.rating-results
+		//- 	h1 51112
 
-
-
-section.product-tab
-	nav.product-tab-nav
-		#nav-tab.nav.nav-tabs(role="tablist")
-			a#nav-one-tab.nav-item.nav-link.active(data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true") Индикатор&#8209;БИО
-				+indicator
-			a#nav-two-tab.nav-item.nav-link(data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false") Расходные материалы (ПЦР&#8209;чип)
-			a#nav-three-tab.nav-item.nav-link(data-toggle="tab" href="#nav-three" role="tab" aria-controls="nav-three" aria-selected="false") Комплектация мобильной ПЦР&#8209;лаборатории «Индикатор&#8209;БИО»
-	#nav-tabContent.tab-content
-		#nav-one.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-one-tab")
+		section.product-tab
+			nav.product-tab-nav
+				#nav-tab.nav.nav-tabs(role="tablist")
+					span
+						+indicator
+					a#nav-one-tab.nav-item.nav-link.active(data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true") Индикатор&#8209;БИО
+					span
+						+tube
+					a#nav-two-tab.nav-item.nav-link(data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false") Расходные материалы (ПЦР&#8209;чип)
+					span 
+						+baggage2
+					a#nav-three-tab.nav-item.nav-link(data-toggle="tab" href="#nav-three" role="tab" aria-controls="nav-three" aria-selected="false") Комплектация мобильной ПЦР&#8209;лаборатории «Индикатор&#8209;БИО»
+						
+			#nav-tabContent.tab-content
+				#nav-one.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-one-tab")
 
 			.container
 				// ========== Индикатор-БИО ==========
