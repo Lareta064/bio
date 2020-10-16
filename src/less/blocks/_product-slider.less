@@ -1,0 +1,22 @@
+.slider-section{
+	.flexslider{
+		margin-bottom: 0;
+	}
+	#carousel ul{
+		// display: flex;
+		// justify-content: center;
+	}
+	#carousel ul li{
+		width: 160px!important;
+		border-radius: 10px;
+		&+li {
+			margin-left: 20px;
+		}
+		&.flex-active-slide{
+			border-radius: 0;
+		}
+	}
+	.flex-direction-nav a:before, .flex-direction-nav a:after{
+		font-size: 30px!important;
+	}
+}

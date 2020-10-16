@@ -126,36 +126,37 @@ const logoBlock = document.querySelector('.logo-block');
 const headerSearchForm = document.querySelector('#search-form');
 const searchResultBlock = document.querySelector('#search-result');
 const searchIcons = document.querySelectorAll('#search-button svg');
+if(menuToggle){
+	menuToggle.addEventListener('click', function () {
+		if (this.classList.contains('active')) {
+			this.classList.remove('active');
+			mobMenu.classList.remove('active');
+			overlayBlock.classList.remove('active');
+			bodyEl.classList.remove('noscroll');
 
-menuToggle.addEventListener('click', function () {
-	if (this.classList.contains('active')) {
-		this.classList.remove('active');
-		mobMenu.classList.remove('active');
-		overlayBlock.classList.remove('active');
-		bodyEl.classList.remove('noscroll');
+
+		} else {
+			this.classList.add('active');
+			mobMenu.classList.add('active');
+			overlayBlock.classList.add('active');
+			bodyEl.classList.add('noscroll');
+
+			// скрыть меню поиска при клике по гамбургеру
+			headerSearchForm.classList.remove('visible');
+			searchResultBlock.classList.remove('visible');
+			logoBlock.classList.remove('noborder');
+			logoBlock.classList.remove('hidden');
+			for (let i = 0; i < searchIcons.length; i++) {
+				searchIcons[0].classList.add('visible');
+				searchIcons[1].classList.remove('visible');
+			}
 
 
-	} else {
-		this.classList.add('active');
-		mobMenu.classList.add('active');
-		overlayBlock.classList.add('active');
-		bodyEl.classList.add('noscroll');
-
-		// скрыть меню поиска при клике по гамбургеру
-		headerSearchForm.classList.remove('visible');
-		searchResultBlock.classList.remove('visible');
-		logoBlock.classList.remove('noborder');
-		logoBlock.classList.remove('hidden');
-		for (let i = 0; i < searchIcons.length; i++) {
-			searchIcons[0].classList.add('visible');
-			searchIcons[1].classList.remove('visible');
 		}
-
-
-	}
-});
-
+	});
+}
 // показать строку поиска в шапке
+if(btnShowSearchInput){
 btnShowSearchInput.addEventListener('click', function (e) {
 	e.preventDefault();
 
@@ -183,7 +184,9 @@ btnShowSearchInput.addEventListener('click', function (e) {
 	for (item of searchIcons) {
 		item.classList.toggle('visible');
 	}
-});
+});	
+}
+
 // Кастомный выпадающий список
 const selectElements = document.querySelectorAll('.form-select');
 if (selectElements) {
@@ -253,4 +256,23 @@ $('.collapse').each(function () {
 		$(this).siblings('.card-header').children('.accordion-icon').removeClass('active');
 	})
 });
+
+//flexSlider
+$('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+ 
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
 })
