@@ -1,61 +1,61 @@
 $(document).ready(function () {
 	//слайдер карточек
-	// 	const benefitsSlider = $('.benefiits-block')
-	// 	benefitsSlider.owlCarousel({
-	// 		items: 1,
-	// 		loop: true,
-	// 		autoplay: true,
-	// 		margin: 15,
-	// 		autoplaySpeed: 1000,
-	// 		responsive: {
-	// 			0: {
-	// 				items: 1,
-	// 			},
+		const benefitsSlider = $('.benefiits-block')
+		benefitsSlider.owlCarousel({
+			items: 1,
+			loop: true,
+			autoplay: true,
+			margin: 15,
+			autoplaySpeed: 1000,
+			responsive: {
+				0: {
+					items: 1,
+				},
 
-	// 			768: {
-	// 				items: 2,
-
-
-	// 			},
-	// 			992: {
-	// 				items: 3,
-
-	// 			}
-	// 		}
-	// });
+				768: {
+					items: 2,
 
 
+				},
+				992: {
+					items: 3,
 
-// destroy слайдера на десктопах
+				}
+			}
+	});
 
-// if ($(window).width() > 991) {
-// 	benefitsSlider.trigger('destroy.owl.carousel');
-// }
-// $(window).resize(function () {
-// 	if ($(window).width() > 991) {
-// 		benefitsSlider.trigger('destroy.owl.carousel');
-// 	}
-// });
 
-// $('.top-slide .item img').each(function () {
-	// 	let ico = $(this).attr('src');
-	// 	$('.after-slide').append('<span class="img" style="background: url(' + ico + ')"></span>');
-	// });
-	// $('.top-slide').owlCarousel({
-	// 	items: 1,
-	// 	autoplay: true,
-	// 	autoplayTimeout: 6000,
-	// 	nav: false,
-	// 	dots: true,
-	// 	loop: true,
-	// 	animateOut: 'fadeOut',
-	// 	dotsContainer: '.after-slide',/*Указываем класс блока пагинации*/
-	// 	autoplayHoverPause: true
-	// });
-	// $('.after-slide').appendTo('.top-slide');
-	// $('.after-slide img').click(function () {
-	// 	$('.top-slide').trigger('to.owl.carousel', [$(this).index(), 300]);
-	// });
+
+//destroy слайдера на десктопах
+
+if ($(window).width() > 991) {
+	benefitsSlider.trigger('destroy.owl.carousel');
+}
+$(window).resize(function () {
+	if ($(window).width() > 991) {
+		benefitsSlider.trigger('destroy.owl.carousel');
+	}
+});
+
+$('.top-slide .item img').each(function () {
+		let ico = $(this).attr('src');
+		$('.after-slide').append('<span class="img" style="background: url(' + ico + ')"></span>');
+	});
+	$('.top-slide').owlCarousel({
+		items: 1,
+		autoplay: true,
+		autoplayTimeout: 6000,
+		nav: false,
+		dots: true,
+		loop: true,
+		animateOut: 'fadeOut',
+		dotsContainer: '.after-slide',/*Указываем класс блока пагинации*/
+		autoplayHoverPause: true
+	});
+	$('.after-slide').appendTo('.top-slide');
+	$('.after-slide img').click(function () {
+		$('.top-slide').trigger('to.owl.carousel', [$(this).index(), 300]);
+	});
 
 // HEADER SLIDER
 let mainSlider = $('.header-slider__wrapper');

@@ -1,67 +1,46 @@
-// .tabs {
-//   display: flex;
-//   width: 100%;
-//   justify-content: space-between;
-//   margin-top: 30px;
-//   margin-bottom: 35px;
-
-//   .tablinks span {
-//     margin-right: 10px;
-//   }
-
-//   .tablinks a {
-//     align-items: center;
-//   }
-// }
-
-// .nav-tabs{
-//   display: flex;
-//   width: 100%;
-//   justify-content: space-between;
-//   margin-top: 30px;
-//   margin-bottom: 35px;
-//   align-items:center;
-
-//   span{
-//     margin-left: 12px;
-//   }
-// }
-
-// .tablinks{
-//   flex-flow: row-reverse;
-
-// }
-
 .product-tab-nav {
   // display: flex;
   // justify-content: space-between;
   color: #1e2144;
   margin-top: 30px;
   margin-bottom: 35px;
+
+  .nav-item.nav-link{
+    position: relative;
+    padding-left: 10px;
+    border: 0;
+    padding-bottom: 30px;
+    border-bottom: 4px solid transparent;
+    
+
+    span{
+      position: absolute;
+      left: 0;
+      top: 4px;
+      transform: translateX(-100%);
+      svg path{
+        fill:#1E2144;
+      }
+    }
+  }
 }
 
 .nav-tabs{
-  align-items: center;
-  // text-align: center;
-}
-
-.nav-tabs{
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.nav-tabs:hover {
+  display: flex;
+  justify-content: space-between;
   background-color: transparent;
   border-color: transparent;
 }
 
 .nav-tabs .nav-link.active {
   color: rgba(30, 33, 68, 0.5);
+  border: 0;
   border-bottom: 4px solid #e4e4e4;
   background-color: transparent;
-  border-color: transparent;
-  border-bottom: 4px solid #e4e4e4;
-  padding-bottom: 30px;
+
+  span svg path{
+    fill: rgba(30, 33, 68, 0.5);;
+  }
 }
 
 .product-block {

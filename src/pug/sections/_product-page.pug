@@ -1,267 +1,85 @@
 section.product
 	.container
-		//- .tabs
-		//- 	.tablinks
-		//- 		span 
-		//- 			+indicator
-		//- 		a(href="#") Индикатор-БИО
-		//- 	.tablinks
-		//- 		span
-		//- 			+tube
-		//- 		a(href="#") Расходные материалы (ПЦР-чип)
-		//- 	.tablinks
-		//- 		span
-		//- 			+baggage2
-		//- 		a(href="#") Комплектация мобильной ПЦР-лаборатории «Индикатор-БИО»
-
-
-		//- #nav-two.tab-pane.fade(role="tabpanel" aria-labelledby="nav-two-tab")
-		//- 	.rating-results
-		//- 		h1 ggegerge
-
-		//- #nav-three.tab-pane.fade(role="tabpanel" aria-labelledby="nav-three-tab")
-		//- 	.rating-results
-		//- 	h1 51112
-
 		section.product-tab
 			nav.product-tab-nav
 				#nav-tab.nav.nav-tabs(role="tablist")
-					span
-						+indicator
 					a#nav-one-tab.nav-item.nav-link.active(data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true") Индикатор&#8209;БИО
-					span
-						+tube
+						span
+							+indicator
 					a#nav-two-tab.nav-item.nav-link(data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="false") Расходные материалы (ПЦР&#8209;чип)
-					span 
-						+baggage2
+						span
+							+tube
 					a#nav-three-tab.nav-item.nav-link(data-toggle="tab" href="#nav-three" role="tab" aria-controls="nav-three" aria-selected="false") Комплектация мобильной ПЦР&#8209;лаборатории «Индикатор&#8209;БИО»
-						
+						span 
+							+baggage2
+
 			#nav-tabContent.tab-content
-				#nav-one.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-one-tab")
-
-			.container
-				// ========== Индикатор-БИО ==========
-				//- .product-block
-				//- 	.top-slide.owl-carousel
-				//- 		.item
-				//- 			img(src='img/slider/indicator-min1.png' width='80' height='80' alt='img1' data-icon='1-sm.jpg')
-				//- 		.item
-				//- 			img(src='img/slider/indicator-min2.png' width='80' height='80' alt='img2' data-icon='2-sm.jpg')
-				//- 		.item
-				//- 			img(src='img/slider/indicator-min3.png' width='80' height='80' alt='img3' data-icon='3-sm.jpg')
-				//- 	.after-slide
-					//- .fotorama(data-nav='thumbs')
-					//- 	a(href='img/slider/indicator_max.png')
-					//- 		img(src='img/slider/indicator-min1.png' width='80' height='80')
-					//- 	a(href='indicator_max.png')
-					//- 		img(src='img/slider/indicator-min2.png' width='80' height='80')
-					//- 	a(href='indicator_max.png')
-					//- 		img(src='img/slider/indicator-min3.png' width='80' height='80')
-					//- .fotoslider
-
-					.block-buy
-						.title-2
-							h2 Индикатор-БИО
-						.buy
-							.number
-								p Количество
-									+counter
-							.button.button-brown Купить
-						.title-3
-							h3 Преимущества<br> мобильной лаборатории «Индикатор БИО» 
-						.text-block
-							ul
-								li Обслуживание одним лаборантом
-								li Удобный кейс для транспортировки
-								li Независимое энергопитание
-								li Минимальное время исследования
-								li Адаптирована для полевых условий
-								li Выявление возбудителя инфекции на ранних этапах заражения (бессимптомные носители)
-								li Флуоресцентная детекция результатов
-
-				.indicator-blocks
-					.double-block
-						.description-block
-							.description-block__body
-								.title-3
-									h3 Описание мобильной<br> ПЦР&#8209;лаборотории «Индикатор&#8209;БИО»
-								p Мобильная ПЦР&#8209;лаборатория «Индикатор&#8209;БИО» предназначена для проведения полного спектра ПЦР&#8209;исследований, включая выявление инфекционных агентов человека и животных, бактериальное и вирусное загрязнение окружающей среды, анализ на наличие ГМИ и т. д.
-								.text-20
-									p Мобильная ПЦР&#8209;лаборатория «Индикатор&#8209;БИО» позволяет осуществлять все этапы ПЦР: пробоподготовку, амплификацию и детекцию результатов.
-							.description-block__footer
-								.link.link--icon
-									a(href="#!")
-										span
-											+download
-										span Руководство по эксплуатации
-
-						.manufacturer-blocks
-							.manufacturer-item
-								.logo
-									.logo__img
-										img(src="img/logo/logo-plast.png" width="140" alt="img")
-								.manufacturer-info__text
-									span Производитель: 
-									span ООО «Экзопласт»	
-								.link
-									a(href="#!")
-										span Подробнее о разработчике
-							.manufacturer-item
-								.logo
-									.logo__img
-										img(src="img/logo/logo-RNIMU.png" width="64" alt="img")
-								.manufacturer-info__text
-									span Разработчик: 
-									span РНИМУ им. Н.И. Пирогова
-								.link
-									a(href="#!")
-										span Подробнее о разработчике
-					.about-block
-						.title-3
-							h3 О приборе
-						.text-20
-							p Мобильная ПЦР-лаборатория «Индикатор&#8209;БИО» является специализированным прибором, позволяющим непосредственно в ходе полимеразной цепной реакции регистрировать накопление продуктов ПЦР в процессе амплификации по уровню флуоресцентного излучения реакционной смеси в картридже (ПЦР «в реальном времени», real&#8209;time PCR).
-						p Амплификатор ДНК с регистрацией результатов в режиме реального времени Индикатор-БИО представляет собой единый конструкционный узел, опорным элементом которого является алюминиевое основание, на которое последовательно закреплены все основные узлы прибора и корпус. 
-						p В нижней части прибора расположены система термоциклирования и модуль управления электропитанием. В средней части расположены система подачи картриджа в виде лотка, система автоматического прижима картриджа, система детекции флуорисценции. В верхней части расположены управляющий микрокомпьютер, печатная плата управления оптической системой, жидкокристаллический дисплей, а также USB-совместимое устройствовывода данных. Конструкция прибора заключена в алюминиевый корпус. 
-						p Прибор является российской разработкой университета РНИМУ им. Н.И. Пирогова.
-
-					.manufacturer-blocks.manufacturer-blocks__mob
-						.manufacturer-item
-							.logo
-								.logo__img
-									img(src="img/logo/logo-RNIMU.png" width="64" alt="img")
-							.manufacturer-info__link
-								.link
-									a(href="#!") 
-										span Разработчик:<br>РНИМУ им. Н.И. Пирогова
-						.manufacturer-item
-							.logo
-								.logo__img
-									img(src="img/logo/logo-plast.png" width="140" alt="img")
-							.manufacturer-info__link
-								.link
-									a(href="#!") 
-										span Производитель:<br>ООО «Экзопласт»
-
-				// ========== Расходные материалы ==========
-				//- .product-block
-				//- 	.fotorama(data-nav='thumbs')
-				//- 		a(href='img/slider/indicator_max.png')
-				//- 			img(src='img/slider/indicator-min1.png' width='80' height='80')
-				//- 		a(href='indicator_max.png')
-				//- 			img(src='img/slider/indicator-min2.png' width='80' height='80')
-				//- 		a(href='indicator_max.png')
-				//- 			img(src='img/slider/indicator-min3.png' width='80' height='80')
-				//- 	.fotoslider
-
-				//- 	.block-buy
-				//- 		.title-2
-				//- 			h2 Расходные материалы (ПЦР-чип)
-				//- 		.buy
-				//- 			.number
-				//- 				p Количество
-				//- 				.number-div Выбрать количество	
-				//- 			.button.button-brown Купить
-				//- 		.title-3
-				//- 			h3 Преимущества<br> мобильной лаборатории «Индикатор БИО» 
-				//- 		.text-block
-				//- 			ul
-				//- 				li Обслуживание одним лаборантом
-				//- 				li Удобный кейс для транспортировки
-				//- 				li Независимое энергопитание
-				//- 				li Минимальное время исследования
-				//- 				li Адаптирована для полевых условий
-				//- 				li Выявление возбудителя инфекции на ранних этапах заражения (бессимптомные носители)
-				//- 				li Флуоресцентная детекция результатов
-
-				.consumables-blocks
-					.description-block
-						.description-block__body
+				#nav-one.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-one")
+					.indicator-blocks
+						.double-block
+							.description-block
+								.description-block__body
+									.title-3
+										h3 Описание мобильной<br> ПЦР&#8209;лаборотории «Индикатор&#8209;БИО»
+									p Мобильная ПЦР&#8209;лаборатория «Индикатор&#8209;БИО» предназначена для проведения полного спектра ПЦР&#8209;исследований, включая выявление инфекционных агентов человека и животных, бактериальное и вирусное загрязнение окружающей среды, анализ на наличие ГМИ и т. д.
+									.text-20
+										p Мобильная ПЦР&#8209;лаборатория «Индикатор&#8209;БИО» позволяет осуществлять все этапы ПЦР: пробоподготовку, амплификацию и детекцию результатов.
+								.description-block__footer
+									.link.link--icon
+										a(href="#!")
+											span
+												+download
+											span Руководство по эксплуатации
+							.manufacturer-blocks
+								.manufacturer-item
+									.logo
+										.logo__img
+											img(src="img/logo/logo-plast.png" width="140" alt="img")
+									.manufacturer-info__text
+										span Производитель: 
+										span ООО «Экзопласт»
+									.link
+										a(href="#!")
+											span Подробнее о разработчике
+								.manufacturer-item
+									.logo
+										.logo__img
+											img(src="img/logo/logo-RNIMU.png" width="64" alt="img")
+									.manufacturer-info__text
+										span Разработчик: 
+										span РНИМУ им. Н.И. Пирогова
+									.link
+										a(href="#!")
+											span Подробнее о разработчике
+						.about-block
 							.title-3
-								h3 Описание мобильной<br> ПЦР&#8209;лаборотории «Индикатор&#8209;БИО»
-							p Мобильная ПЦР&#8209;лаборатория «Индикатор&#8209;БИО» предназначена для проведения полного спектра ПЦР&#8209;исследований, включая выявление инфекционных агентов человека и животных, бактериальное и вирусное загрязнение окружающей среды, анализ на наличие ГМИ и т. д.
+								h3 О приборе
 							.text-20
-								p Мобильная ПЦР&#8209;лаборатория «Индикатор&#8209;БИО» позволяет осуществлять все этапы ПЦР: пробоподготовку, амплификацию и детекцию результатов.
-						.description-block__footer
-							.link.link--icon
-								a(href="#!")
-									span
-										+download
-									span Руководство по эксплуатации
+								p Мобильная ПЦР-лаборатория «Индикатор&#8209;БИО» является специализированным прибором, позволяющим непосредственно в ходе полимеразной цепной реакции регистрировать накопление продуктов ПЦР в процессе амплификации по уровню флуоресцентного излучения реакционной смеси в картридже (ПЦР «в реальном времени», real&#8209;time PCR).
+							p Амплификатор ДНК с регистрацией результатов в режиме реального времени Индикатор-БИО представляет собой единый конструкционный узел, опорным элементом которого является алюминиевое основание, на которое последовательно закреплены все основные узлы прибора и корпус. 
+							p В нижней части прибора расположены система термоциклирования и модуль управления электропитанием. В средней части расположены система подачи картриджа в виде лотка, система автоматического прижима картриджа, система детекции флуорисценции. В верхней части расположены управляющий микрокомпьютер, печатная плата управления оптической системой, жидкокристаллический дисплей, а также USB-совместимое устройствовывода данных. Конструкция прибора заключена в алюминиевый корпус. 
+							p Прибор является российской разработкой университета РНИМУ им. Н.И. Пирогова.
 
-					.manufacturer-blocks
-						.manufacturer-item
-							.logo
-								.logo__img
-									img(src="img/logo/logo-plast.png" width="140" alt="img")
-								.manufacturer-info__text
-									span Производитель: 
-									span ООО «Экзопласт»
-							.link
-								a(href="#!")
-									span Подробнее о разработчике
-						.manufacturer-item
-							.logo
-								.logo__img
-									img(src="img/logo/logo-RNIMU.png" width="64" alt="img")
-								.manufacturer-info__text
-									span Разработчик: 
-									span РНИМУ им. Н.И. Пирогова
-							.link
-								a(href="#!")
-									span Подробнее о разработчике
+						.manufacturer-blocks.manufacturer-blocks__mob
+							.manufacturer-item
+								.logo
+									.logo__img
+										img(src="img/logo/logo-RNIMU.png" width="64" alt="img")
+								.manufacturer-info__link
+									.link
+										a(href="#!") 
+											span Разработчик:<br>РНИМУ им. Н.И. Пирогова
+							.manufacturer-item
+								.logo
+									.logo__img
+										img(src="img/logo/logo-plast.png" width="140" alt="img")
+								.manufacturer-info__link
+									.link
+										a(href="#!") 
+											span Производитель:<br>ООО «Экзопласт»
 
-					.manufacturer-blocks.manufacturer-blocks__mob
-						.manufacturer-item
-							.logo
-								.logo__img
-									img(src="img/logo/logo-RNIMU.png" width="64" alt="img")
-							.manufacturer-info__link
-								.link
-									a(href="#!") 
-										span Разработчик:<br>РНИМУ им. Н.И. Пирогова	
-						.manufacturer-item
-							.logo
-								.logo__img
-									img(src="img/logo/logo-plast.png" width="140" alt="img")
-							.manufacturer-info__link
-								.link
-									a(href="#!") 
-										span Производитель:<br>ООО «Экзопласт»
-
-				// ========== Комплектация ==========
-				//- .product-block
-				//- 	.fotorama(data-nav='thumbs')
-				//- 		a(href='img/slider/indicator_max.png')
-				//- 			img(src='img/slider/indicator-min1.png' width='80' height='80')
-				//- 		a(href='indicator_max.png')
-				//- 			img(src='img/slider/indicator-min2.png' width='80' height='80')
-				//- 		a(href='indicator_max.png')
-				//- 			img(src='img/slider/indicator-min3.png' width='80' height='80')
-				//- 	.fotoslider
-
-				//- 	.block-buy
-				//- 		.title-2
-				//- 			h2 Индикатор-БИО
-				//- 		.buy
-				//- 			.number
-				//- 				p Количество
-				//- 				.number-div Выбрать количество	
-				//- 			.button.button-brown Купить
-				//- 		.title-3
-				//- 			h3 Преимущества<br> мобильной лаборатории «Индикатор БИО» 
-				//- 		.text-block
-				//- 			ul
-				//- 				li Обслуживание одним лаборантом
-				//- 				li Удобный кейс для транспортировки
-				//- 				li Независимое энергопитание
-				//- 				li Минимальное время исследования
-				//- 				li Адаптирована для полевых условий
-				//- 				li Выявление возбудителя инфекции на ранних этапах заражения (бессимптомные носители)
-				//- 				li Флуоресцентная детекция результатов
-
-				.trim-level
-					.col-left
+				#nav-one.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-two")
+					.consumables-blocks
 						.description-block
 							.description-block__body
 								.title-3
@@ -276,64 +94,14 @@ section.product
 											+download
 										span Руководство по эксплуатации
 
-						.specification-block
-							.title-3
-								h3 Спецификация
-							.text-block
-								ul
-									li Автономное исследование до 300 образцов
-									li Габариты кейса 450 х 350 х 200 мм
-									li  Масса прибора без комплекта запасных частей и принадлежностей не более 5 кг
-							.title-3
-								h3 Комплектация
-							.text-block
-								ul
-									li ПЦР-амплификатор ДНК с регистрацией результатов в режиме реального времени Индикатор-БИО
-									li Блок питания
-									li Эксплуатационная документация
-									li Методика поверки	
-
-					.col-right
-						.capacities-block
-							.title-3
-								h3 Возможности мобильной лаборатории «Индикатор&#8209;БИО»
-							.text-block
-								ul
-									li Тест за 30&#8209;45 минут
-									li Время приведения в рабочий режим не более 5 минут
-									li До 10 исследований на одном аккумуляторе
-									li Возможность использования сменных аккумуляторов
-									li Мультиплексный формат теста (два формата мультиплексирования)
-									li Одноразовые флюидные картриджи
-									li Качественная или количественная детекция 
-									li Быстрое и высокоточное выявление возбудителя инфекции для оперативного принятия мер по ограничению его распространения
-									li Быстрое получение результатов анализа на наличие инфекции в условиях автономности или удаленности от стационарных лабораторий
-
-						.specification-block.specification-block__mob
-							.title-3
-								h3 Спецификация
-							.text-block
-								ul
-									li Автономное исследование до 300 образцов
-									li Габариты кейса 450 х 350 х 200 мм
-									li  Масса прибора без комплекта запасных частей и принадлежностей не более 5 кг
-							.title-3
-								h3 Комплектация
-							.text-block
-								ul
-									li ПЦР-амплификатор ДНК с регистрацией результатов в режиме реального времени Индикатор-БИО
-									li Блок питания
-									li Эксплуатационная документация
-									li Методика поверки				
-
 						.manufacturer-blocks
 							.manufacturer-item
 								.logo
 									.logo__img
 										img(src="img/logo/logo-plast.png" width="140" alt="img")
-								.manufacturer-info__text
-									span Производитель: 
-									span ООО «Экзопласт»
+									.manufacturer-info__text
+										span Производитель: 
+										span ООО «Экзопласт»
 								.link
 									a(href="#!")
 										span Подробнее о разработчике
@@ -341,9 +109,9 @@ section.product
 								.logo
 									.logo__img
 										img(src="img/logo/logo-RNIMU.png" width="64" alt="img")
-								.manufacturer-info__text
-									span Разработчик: 
-									span РНИМУ им. Н.И. Пирогова
+									.manufacturer-info__text
+										span Разработчик: 
+										span РНИМУ им. Н.И. Пирогова
 								.link
 									a(href="#!")
 										span Подробнее о разработчике
@@ -365,10 +133,115 @@ section.product
 									.link
 										a(href="#!") 
 											span Производитель:<br>ООО «Экзопласт»
+			
+				#nav-one.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-three")
+					.trim-level
+						.col-left
+							.description-block
+								.description-block__body
+									.title-3
+										h3 Описание мобильной<br> ПЦР&#8209;лаборотории «Индикатор&#8209;БИО»
+									p Мобильная ПЦР&#8209;лаборатория «Индикатор&#8209;БИО» предназначена для проведения полного спектра ПЦР&#8209;исследований, включая выявление инфекционных агентов человека и животных, бактериальное и вирусное загрязнение окружающей среды, анализ на наличие ГМИ и т. д.
+									.text-20
+										p Мобильная ПЦР&#8209;лаборатория «Индикатор&#8209;БИО» позволяет осуществлять все этапы ПЦР: пробоподготовку, амплификацию и детекцию результатов.
+								.description-block__footer
+									.link.link--icon
+										a(href="#!")
+											span
+												+download
+											span Руководство по эксплуатации
 
+							.specification-block
+								.title-3
+									h3 Спецификация
+								.text-block
+									ul
+										li Автономное исследование до 300 образцов
+										li Габариты кейса 450 х 350 х 200 мм
+										li  Масса прибора без комплекта запасных частей и принадлежностей не более 5 кг
+								.title-3
+									h3 Комплектация
+								.text-block
+									ul
+										li ПЦР-амплификатор ДНК с регистрацией результатов в режиме реального времени Индикатор-БИО
+										li Блок питания
+										li Эксплуатационная документация
+										li Методика поверки
 
+						.col-right
+							.capacities-block
+								.title-3
+									h3 Возможности мобильной лаборатории «Индикатор&#8209;БИО»
+								.text-block
+									ul
+										li Тест за 30&#8209;45 минут
+										li Время приведения в рабочий режим не более 5 минут
+										li До 10 исследований на одном аккумуляторе
+										li Возможность использования сменных аккумуляторов
+										li Мультиплексный формат теста (два формата мультиплексирования)
+										li Одноразовые флюидные картриджи
+										li Качественная или количественная детекция 
+										li Быстрое и высокоточное выявление возбудителя инфекции для оперативного принятия мер по ограничению его распространения
+										li Быстрое получение результатов анализа на наличие инфекции в условиях автономности или удаленности от стационарных лабораторий
 
+							.specification-block.specification-block__mob
+								.title-3
+									h3 Спецификация
+								.text-block
+									ul
+										li Автономное исследование до 300 образцов
+										li Габариты кейса 450 х 350 х 200 мм
+										li  Масса прибора без комплекта запасных частей и принадлежностей не более 5 кг
+								.title-3
+									h3 Комплектация
+								.text-block
+									ul
+										li ПЦР-амплификатор ДНК с регистрацией результатов в режиме реального времени Индикатор-БИО
+										li Блок питания
+										li Эксплуатационная документация
+										li Методика поверки
 
+							.manufacturer-blocks
+								.manufacturer-item
+									.logo
+										.logo__img
+											img(src="img/logo/logo-plast.png" width="140" alt="img")
+									.manufacturer-info__text
+										span Производитель: 
+										span ООО «Экзопласт»
+									.link
+										a(href="#!")
+											span Подробнее о разработчике
+								.manufacturer-item
+									.logo
+										.logo__img
+											img(src="img/logo/logo-RNIMU.png" width="64" alt="img")
+									.manufacturer-info__text
+										span Разработчик: 
+										span РНИМУ им. Н.И. Пирогова
+									.link
+										a(href="#!")
+											span Подробнее о разработчике
+
+							.manufacturer-blocks.manufacturer-blocks__mob
+								.manufacturer-item
+									.logo
+										.logo__img
+											img(src="img/logo/logo-RNIMU.png" width="64" alt="img")
+									.manufacturer-info__link
+										.link
+											a(href="#!") 
+												span Разработчик:<br>РНИМУ им. Н.И. Пирогова	
+								.manufacturer-item
+									.logo
+										.logo__img
+											img(src="img/logo/logo-plast.png" width="140" alt="img")
+									.manufacturer-info__link
+										.link
+											a(href="#!") 
+												span Производитель:<br>ООО «Экзопласт»
+
+			
 
 
 
