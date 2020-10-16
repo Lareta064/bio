@@ -151,7 +151,6 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-
   .title-1,
   .title-2 {
     font-size: 24px;
@@ -187,7 +186,7 @@ button:focus {
     background: none;
   }
 
-  span+span {
+  span + span {
     margin-left: 15px;
   }
 }
@@ -220,7 +219,6 @@ p {
 .text-13.link {
   font-size: 13px;
   line-height: 16px;
-
 }
 
 .text-color {
@@ -291,5 +289,13 @@ p {
 
   &:hover {
     background-color: #246fff;
+  }
+}
+
+.br-mobile {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
   }
 }
