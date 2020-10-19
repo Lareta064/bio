@@ -11,7 +11,9 @@
     border: 0;
     padding-bottom: 30px;
     border-bottom: 4px solid transparent;
-    
+    @media(max-width:1199px){
+      padding-bottom: 20px;
+    }
 
     span{
       position: absolute;
@@ -37,6 +39,9 @@
   border: 0;
   border-bottom: 4px solid #e4e4e4;
   background-color: transparent;
+  @media(max-width:1199px){
+    border-bottom: 0px;
+  }
 
   span svg path{
     fill: rgba(30, 33, 68, 0.5);;
@@ -50,23 +55,32 @@
   background-color: #ffffff;
   padding-right: 20px;
   margin-bottom: 30px;
+  @media(max-width:991px){
+    display: block;
+  }
+  @media(max-width:424px){
+   padding-right: 0;
+   min-width: 375px;
+   margin-left:-15px;
+  }
 
   .fotorama {
     display: block;
     width: 65%;
     max-width: 830px;
-
-    @media (max-width: 991px) {
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 767px) {
       display: none;
     }
   }
 
-  .fotoslider {
-    display: none;
-    @media (max-width: 991px) {
-      display: block;
-    }
-  }
+  // .fotoslider {
+  //   display: none;
+  //   @media (max-width: 991px) {
+  //     display: block;
+  //   }
+  // }
 
   .block-buy {
     width: 34%;
@@ -74,6 +88,14 @@
     padding-left: 47px;
     border-left: 1px solid rgba(228, 228, 228, 0.8);
     padding-bottom: 112px;
+    @media(max-width: 1199px){
+      width: 40%;
+    }
+    @media(max-width: 991px){
+      width: 100%;
+      padding-left: 18px;
+      padding-right: 18px;
+    }
 
     .title-2 h2 {
       margin-top: 45px;
