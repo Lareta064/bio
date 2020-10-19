@@ -18,19 +18,18 @@ section.product
 					.product-block
 						.fotorama(data-nav='thumbs')
 							a(href='img/slider/indicator_max.png')
+								img(src='img/slider/indicator-max.png' width='80' height='80')
+							a(href='indicator-min1.png')
 								img(src='img/slider/indicator-min1.png' width='80' height='80')
-							a(href='indicator_max.png')
+							a(href='indicator-min2.png')
 								img(src='img/slider/indicator-min2.png' width='80' height='80')
-							a(href='indicator_max.png')
-								img(src='img/slider/indicator-min3.png' width='80' height='80')
 						.product-page__slider.owl-carousel
 							.product-slider-item
 								img(src='img/slider/indicator_max.png' alt='img' )
 							.product-slider-item
-								img(src='img/slider/indicator_max.png' alt='img' )
+								img(src='img/slider/indicator-min1.png' alt='img' )
 							.product-slider-item
-								img(src='img/slider/indicator_max.png' alt='img' )
-						
+								img(src='img/slider/indicator-min2.png' alt='img' )
 						.block-buy
 							.title-2
 								h2 Индикатор-БИО
@@ -117,12 +116,12 @@ section.product
 				#nav-two.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-two")
 					.product-block
 						.fotorama(data-nav='thumbs')
-							a(href='img/slider/indicator_max.png')
-								img(src='img/slider/indicator-min1.png' width='80' height='80')
-							a(href='indicator_max.png')
-								img(src='img/slider/indicator-min2.png' width='80' height='80')
-							a(href='indicator_max.png')
-								img(src='img/slider/indicator-min3.png' width='80' height='80')
+							a(href='img/slider/cheap_max.png')
+								img(src='img/slider/cheap_max.png' width='80' height='80')
+							a(href='cheap-min1.png')
+								img(src='img/slider/cheap-min1.png' width='80' height='80')
+							a(href='cheap-min2.png')
+								img(src='img/slider/cheap-min2.png' width='80' height='80')
 						//- .top-slide.owl-carousel
 						//- 	.item
 						//- 		img(src='img/slider/indicator-min1.png' width='80' height='80' alt='img1' data-icon='1-sm.jpg')
@@ -134,14 +133,14 @@ section.product
 						//- .fotoslider
 						.product-page__slider.owl-carousel
 							.product-slider-item
-								img(src='img/slider/indicator_max.png' alt='img' )
+								img(src='img/slider/cheap_max.png' alt='img' )
 							.product-slider-item
-								img(src='img/slider/indicator_max.png' alt='img' )
+								img(src='img/slider/cheap-min1.png' alt='img' )
 							.product-slider-item
-								img(src='img/slider/indicator_max.png' alt='img' )
+								img(src='img/slider/cheap-min2.png' alt='img' )
 						.block-buy
 							.title-2
-								h2 Индикатор-БИО
+								h2 Расходные материалы (ПЦР-чип)
 							.buy
 								.number
 									p Количество
@@ -216,40 +215,37 @@ section.product
 				#nav-three.tab-pane.fade(role="tabpanel" aria-labelledby="nav-three")
 					.product-block
 						.fotorama(data-nav='thumbs')
-							a(href='img/slider/indicator_max.png')
-								img(src='img/slider/indicator-min1.png' width='80' height='80')
-							a(href='indicator_max.png')
-								img(src='img/slider/indicator-min2.png' width='80' height='80')
-							a(href='indicator_max.png')
-								img(src='img/slider/indicator-min3.png' width='80' height='80')
+							a(href='img/slider/complect_max.png')
+								img(src='img/slider/complect_max.png' width='80' height='80')
+							a(href='complect_min1.png')
+								img(src='img/slider/complect_min1.png' width='80' height='80')
+							a(href='complect_min2.png')
+								img(src='img/slider/complect_min2.png' width='80' height='80')
 						.top-slide.owl-carousel
 							.item
-								img(src='img/slider/indicator-min1.png' width='80' height='80' alt='img1' data-icon='1-sm.jpg')
+								img(src='img/slider/complect_max.png' width='80' height='80' alt='img1' data-icon='1-sm.jpg')
 							.item
-								img(src='img/slider/indicator-min2.png' width='80' height='80' alt='img2' data-icon='2-sm.jpg')
+								img(src='img/slider/complect_min1.png' width='80' height='80' alt='img2' data-icon='2-sm.jpg')
 							.item
-								img(src='img/slider/indicator-min3.png' width='80' height='80' alt='img3' data-icon='3-sm.jpg')
-						.after-slide
-						.fotoslider
+								img(src='img/slider/complect_min2.png' width='80' height='80' alt='img3' data-icon='3-sm.jpg')
 						.block-buy
 							.title-2
-								h2 Индикатор-БИО
+								h2 Комплектация<br> мобильной<br> ПЦР-лаборатории “Индикатор-БИО”
 							.buy
 								.number
 									p Количество
 										+counter
-								.button.button-brown Купить
+								.button.button-brown(data-toggle="modal" data-target="#buyForm") Купить
 							.title-3
-								h3 Преимущества<br> мобильной лаборатории «Индикатор БИО» 
+								h3 Принадлежности 
 							.text-block
 								ul
-									li Обслуживание одним лаборантом
-									li Удобный кейс для транспортировки
-									li Независимое энергопитание
-									li Минимальное время исследования
-									li Адаптирована для полевых условий
-									li Выявление возбудителя инфекции на ранних этапах заражения (бессимптомные носители)
-									li Флуоресцентная детекция результатов
+									li Внешний аккумулятор Rombica NEO PRO-450C
+									li Переходник для аккумулятора
+									li Два защитных кейса
+									li Картриджи для амплификации в индивидуальной упаковке – 100 штук
+									li Реагенты
+									li Дозаторы
 					.trim-level
 						.col-left
 							.description-block
