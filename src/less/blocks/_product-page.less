@@ -68,7 +68,9 @@
   margin-bottom: 30px;
   @media (max-width: 991px) {
     display: block;
+    margin-bottom: 20px;
   }
+
   @media (max-width: 424px) {
     padding-right: 0;
     min-width: 375px;
@@ -78,7 +80,7 @@
 
   .fotorama {
     display: block;
-    width: 65%;
+    width: 69%;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
@@ -108,6 +110,7 @@
       padding-left: 18px;
       padding-right: 18px;
       padding-bottom: 33px;
+      margin-top: 30px;
     }
 
     .title-2 h2 {
@@ -164,15 +167,23 @@
 .indicator-blocks {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   @media (max-width: 991px) {
     display: block;
   }
 
   .double-block {
+    margin-right: 30px;
+    @media (max-width: 991px){
+      margin-right: 0;
+    }
+
     .description-block {
       margin-bottom: 30px;
+      @media (max-width: 991px) {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -194,6 +205,10 @@
   max-width: 615px;
   background-color: #ffffff;
   border-radius: 10px;
+
+  @media(max-width:991px){
+    max-width: 100%;
+  }
 
   .description-block__body {
     padding-top: 56px;
@@ -247,6 +262,7 @@
   border-radius: 10px;
 
   @media (max-width: 991px) {
+    max-width: 100%;
     padding-top: 35px;
     padding-right: 15px;
     padding-bottom: 30px;
@@ -323,7 +339,7 @@
 
   @media (max-width: 991px) {
     display: block;
-    margin-top: 30px;
+    margin-top: 20px;
 
     .manufacturer-item {
       display: flex;
@@ -437,6 +453,7 @@
     padding-left: 60px;
 
     @media (max-width: 991px) {
+      max-width: 100%;
       padding-top: 35px;
       padding-right: 0;
       padding-bottom: 30px;
