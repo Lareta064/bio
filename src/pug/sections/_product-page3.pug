@@ -17,19 +17,21 @@ section.product
 				#nav-one.tab-pane.fade(role="tabpanel" aria-labelledby="nav-one")
 					.product-block
 						.fotorama(data-nav='thumbs')
-							a(href='img/slider/complect_max.png')
-								img(src='img/slider/complect_min1.png' width='80' height='80')
-							a(href='indicator_max.png')
-								img(src='img/slider/complect_min2.png' width='80' height='80')
-							a(href='indicator_max.png')
-								img(src='img/slider/complect_min3.png' width='80' height='80')
+							a(href='img/slider/indicator_max.png')
+								img(src='img/slider/indicator-min1.png' width='80' height='80')
+							a(href='img/slider/indicator-min2.png')
+								img(src='img/slider/indicator-min2.png' width='80' height='80')
+							a(href='img/slider/indicator-min3.png')
+								img(src='img/slider/indicator-min3.png' width='80' height='80')
 						.product-page__slider.owl-carousel
 							.product-slider-item
-								img(src='img/slider/complect_max.png' alt='img' )
+								img(src='img/slider/indicator_max.png' alt='img' )
 							.product-slider-item
-								img(src='img/slider/complect_max.png' alt='img' )
+								img(src='img/slider/indicator-min1.png' alt='img' )
 							.product-slider-item
-								img(src='img/slider/complect_max.png' alt='img' )
+								img(src='img/slider/indicator-min2.png' alt='img' )
+							.product-slider-item
+								img(src='img/slider/indicator-min3.png' alt='img' )
 						.block-buy
 							.title-2
 								h2 Индикатор-БИО
@@ -37,7 +39,7 @@ section.product
 								.number
 									p Количество
 										+counter
-								.button.button-brown Купить
+								.button.button-brown(data-toggle="modal" data-target="#buyForm") Купить
 							.title-3
 								h3 Преимущества<br> мобильной лаборатории «Индикатор БИО» 
 							.text-block
@@ -118,26 +120,21 @@ section.product
 						.fotorama(data-nav='thumbs')
 							a(href='img/slider/cheap_max.png')
 								img(src='img/slider/cheap_max.png' width='80' height='80')
-							a(href='cheap-min1.png')
+							a(href='img/slider/cheap-min1.png')
 								img(src='img/slider/cheap-min1.png' width='80' height='80')
-							a(href='cheap-min2.png')
+							a(href='img/slider/cheap-min2.png')
 								img(src='img/slider/cheap-min2.png' width='80' height='80')
-						//- .top-slide.owl-carousel
-						//- 	.item
-						//- 		img(src='img/slider/indicator-min1.png' width='80' height='80' alt='img1' data-icon='1-sm.jpg')
-						//- 	.item
-						//- 		img(src='img/slider/indicator-min2.png' width='80' height='80' alt='img2' data-icon='2-sm.jpg')
-						//- 	.item
-						//- 		img(src='img/slider/indicator-min3.png' width='80' height='80' alt='img3' data-icon='3-sm.jpg')
-						//- .after-slide
-						//- .fotoslider
+							a(href='img/slider/cheap-min3.png')
+								img(src='img/slider/cheap-min3.png' width='80' height='80')
 						.product-page__slider.owl-carousel
 							.product-slider-item
-								img(src='img/slider/indicator_max.png' alt='img' )
+								img(src='img/slider/cheap_max.png' alt='img' )
 							.product-slider-item
-								img(src='img/slider/indicator_max.png' alt='img' )
+								img(src='img/slider/cheap_min1.png' alt='img' )
 							.product-slider-item
-								img(src='img/slider/indicator_max.png' alt='img' )
+								img(src='img/slider/cheap_min2.png' alt='img' )
+							.product-slider-item
+								img(src='img/slider/cheap_min3.png' alt='img' )
 						.block-buy
 							.title-2
 								h2 Индикатор-БИО
@@ -145,7 +142,7 @@ section.product
 								.number
 									p Количество
 										+counter
-								.button.button-brown Купить
+								.button.button-brown(data-toggle="modal" data-target="#buyForm") Купить
 							.title-3
 								h3 Преимущества<br> мобильной лаборатории «Индикатор БИО» 
 							.text-block
@@ -215,19 +212,21 @@ section.product
 				#nav-three.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-three")
 					.product-block
 						.fotorama(data-nav='thumbs')
-							a(href='img/slider/indicator_max.png')
-								img(src='img/slider/indicator-min1.png' width='80' height='80')
-							a(href='indicator_max.png')
-								img(src='img/slider/indicator-min2.png' width='80' height='80')
-							a(href='indicator_max.png')
-								img(src='img/slider/indicator-min3.png' width='80' height='80')
-						.top-slide.owl-carousel
-							.item
-								img(src='img/slider/indicator-min1.png' width='80' height='80' alt='img1' data-icon='1-sm.jpg')
-							.item
-								img(src='img/slider/indicator-min2.png' width='80' height='80' alt='img2' data-icon='2-sm.jpg')
-							.item
-								img(src='img/slider/indicator-min3.png' width='80' height='80' alt='img3' data-icon='3-sm.jpg')
+							a(href='img/slider/complect_max.png')
+								img(src='img/slider/complect_min1.png' width='80' height='80')
+							a(href='img/slider/complect_min2.png')
+								img(src='img/slider/complect_min2.png' width='80' height='80')
+							a(href='img/slider/complect_min3.png')
+								img(src='img/slider/complect_min3.png' width='80' height='80')
+						.product-page__slider.owl-carousel
+							.product-slider-item
+								img(src='img/slider/complect_max.png' alt='img' )
+							.product-slider-item
+								img(src='img/slider/complect_min1.png' alt='img' )
+							.product-slider-item
+								img(src='img/slider/complect_min2.png' alt='img' )
+							.product-slider-item
+								img(src='img/slider/complect_min3.png' alt='img' )
 						.block-buy
 							.title-2
 								h2 Комплектация<br> мобильной<br> ПЦР-лаборатории “Индикатор-БИО”
@@ -235,7 +234,7 @@ section.product
 								.number
 									p Количество
 										+counter
-								.button.button-brown Купить
+								.button.button-brown(data-toggle="modal" data-target="#buyForm") Купить
 							.title-3
 								h3 Принадлежности 
 							.text-block
