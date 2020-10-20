@@ -215,28 +215,31 @@ if (selectElements) {
 	}
 }
 // счетчик количества
-const productCounter = document.querySelector('.product-counter');
-if (productCounter) {
-	const btnPlus = productCounter.querySelector('.product-counter--plus');
-	const btnMinus = productCounter.querySelector('.product-counter--minus');
-	let inputItem = productCounter.querySelector('input');
-	let inputItemValue = +productCounter.querySelector('input').value;
+const productCounter = document.querySelectorAll('.product-counter');
+for(let item of productCounter){
 
-	btnPlus.addEventListener('click', function (e) {
+	if (item) {
+		const btnPlus = item.querySelector('.product-counter--plus');
+		const btnMinus = item.querySelector('.product-counter--minus');
+		let inputItem = item.querySelector('input');
+		let inputItemValue = +item.querySelector('input').value;
 
-		inputItemValue += 1;
-		inputItem.value = inputItemValue;
-	});
-	btnMinus.addEventListener('click', function (e) {
-		if (inputItemValue == 1) {
-			inputItemValue = 1;
-		} else {
-			inputItemValue -= 1;
+		btnPlus.addEventListener('click', function (e) {
+
+			inputItemValue += 1;
 			inputItem.value = inputItemValue;
-		}
+		});
+		btnMinus.addEventListener('click', function (e) {
+			if (inputItemValue == 1) {
+				inputItemValue = 1;
+			} else {
+				inputItemValue -= 1;
+				inputItem.value = inputItemValue;
+			}
 
-	})
+		})
 
+	}
 }
 //accordion Вопрос-Ответ, поворот Иконки
 $('.collapse').each(function () {
